@@ -1,0 +1,903 @@
+{
+  "id": "ec0bdab3-404f-4136-ba2b-17e7b5594250",
+  "type": "next",
+  "payload": {
+    "data": {
+      "newEvent": {
+        "metadata": {
+          "offset": "344",
+          "uniqueEventId": "d6e98957-fdaa-4779-94d2-727170a9e12b"
+        },
+        "moduleName": "CASHIERING",
+        "eventName": "NEW POSTING",
+        "primaryKey": "1435756",
+        "timestamp": "08-APR-26 08.12.34.701758 AM",
+        "publisherId": "1345317271",
+        "actionInstanceId": "1435756",
+        "hotelId": "HPDEV",
+        "detail": [
+          {
+            "elementName": "AMOUNT",
+            "newValue": "0",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "APPROVAL CODE",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "APPROVAL DATE",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "APPROVAL STATUS",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "AUTHORIZER",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "CASHIER",
+            "newValue": "1",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "CONFIRMATION NO",
+            "newValue": "2912714",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "CONFIRMATION LEG NO",
+            "newValue": "1",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "COMP NO",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "CREDIT",
+            "newValue": "0",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "CURRENCY CODE",
+            "newValue": "EUR",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "DEBIT",
+            "newValue": "0",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "GUEST NAME ID",
+            "newValue": "1886429",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "FIRST NAME",
+            "newValue": "Wafa",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "NAME",
+            "newValue": "Estrada",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "MEMBERSHIP NUMBER",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "MEMBERSHIP TYPE",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "RESV NAME ID",
+            "newValue": "430407",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "ROOM",
+            "newValue": "3431",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "SUB GROUP",
+            "newValue": "08001",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "TRANSACTION CODE",
+            "newValue": "80119",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "TRANSACTION DESC",
+            "newValue": "SERV 15% S/HT  TI 01/01/2014",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "TRANSACTION ID",
+            "newValue": "1435756",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "TRANSACTION STATUS",
+            "newValue": "NEW",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "TRANSACTION DATE",
+            "newValue": "2026-02-26",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "WINDOW",
+            "newValue": "1",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "USER NAME",
+            "newValue": "Y.LOBJOIT-EXT@SBM.MC@SBMDEV",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "EXTERNAL USER ID",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "TRX AMOUNT",
+            "newValue": "119.53",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "POSTED AMOUNT",
+            "newValue": "119.53",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "DEPOSIT CREDIT",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "DEPOSIT DEBIT",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "ARTICLE ID",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "AR CREDIT",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "AR DEBIT",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "AR NUMBER ID",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "AR STATE",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "AR TRANSFER DATE",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "AUTO CREDITBILL YN",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "AUTO SETTLE YN",
+            "newValue": "N",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "BILL NUMBER",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "BUSINESS DATE",
+            "newValue": "26-FEB-26",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "CASHIER CREDIT",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "CASHIER DEBIT",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "CHECK NUMBER",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "COVERS",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "CREDIT CARD ID",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "CURRENCY",
+            "newValue": "EUR",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "DEP TAX TRANSFERED YN",
+            "newValue": "N",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "EXCHANGE RATE",
+            "newValue": "1",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "FISCAL BILL NO",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "FOLIO NO",
+            "newValue": "436041",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "FOLIO TYPE",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "FROM RESV ID",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "GROSS AMOUNT",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "GUEST CREDIT",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "GUEST DEBIT",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "INSERT DATE",
+            "newValue": "2026-04-08",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "INSERT USER",
+            "newValue": "1345317271",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "INVOICE NO",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "MARKET CODE",
+            "newValue": "PGLS",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "NET AMOUNT",
+            "newValue": "119.530392156863",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "ORIGINAL RESV NAME ID",
+            "newValue": "430407",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "ORIGINAL ROOM",
+            "newValue": "3431",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "PASSER BY NAME",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "POSTIT YN",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "PRODUCT",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "QUANTITY",
+            "newValue": "1.00",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "REFERENCE",
+            "newValue": "[Add: 15%Prices.(B)]",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "REMARK",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UPDATE DATE",
+            "newValue": "08-APR-26",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UPDATE USER",
+            "newValue": "1345317271",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "DEPOSIT TRANSACTION ID",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "PACKAGE TRANSACTION ID",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "ADJUST TRANSACTION ID",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "TAX TRANSACTION ID",
+            "newValue": "1435753",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "TO RESV NAME ID",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "TAX RATE",
+            "newValue": "15",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "TAX RATE TYPE",
+            "newValue": "TAXTYPES-PERCENT",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "ROUTED YN",
+            "newValue": "N",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "ROUTING DATE",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "ROOM CLASS",
+            "newValue": "SUP",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "RESV DEPOSIT ID",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "REVENUE AMT",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "REVERSE PAYMENT TRX NO",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "RATE CODE",
+            "newValue": "CONSORTIA",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "RECPT NO",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "RECPT TYPE",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          }
+        ]
+      }
+    }
+  }
+}

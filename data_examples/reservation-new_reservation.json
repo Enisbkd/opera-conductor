@@ -1,0 +1,2443 @@
+{
+  "id": "60b56beb-832e-4418-b418-c3582926b8f6",
+  "type": "next",
+  "payload": {
+    "data": {
+      "newEvent": {
+        "metadata": {
+          "offset": "93",
+          "uniqueEventId": "2b0e4b34-15e8-44b7-8fd1-13bebe522e29"
+        },
+        "moduleName": "RESERVATION",
+        "eventName": "NEW RESERVATION",
+        "primaryKey": "489510",
+        "timestamp": "14-APR-26 08.43.27.291771 AM",
+        "publisherId": "1345292917",
+        "actionInstanceId": "4242925",
+        "hotelId": "HPDEV",
+        "detail": [
+          {
+            "elementName": "USER NAME",
+            "newValue": "JAKUB.SLOMKA@ORACLE",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "ACTION DATE",
+            "newValue": "2026-04-14",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "NAME",
+            "newValue": "Slomka",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "FIRST NAME",
+            "newValue": "Jakub Test",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "MIDDLE NAME",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "CONFIRMATION NO",
+            "newValue": "2994038",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "NAME2",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "NAME3",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "CONFIRMATION LEG NO",
+            "newValue": "1",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "TRAVEL AGENT NAME",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "COMPANY NAME",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "SOURCE NAME",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "GROUP NAME",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "PARTY CODE",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "TRAVEL AGENT NAME ID",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "COMPANY NAME ID",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "SOURCE NAME ID",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "GROUP NAME ID",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "GUEST NAME ID",
+            "newValue": "1892476",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "RESERVATION STATUS",
+            "newValue": "RESERVED",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "ARRIVAL DATE",
+            "newValue": "2026-03-08",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "ARRIVAL TIME",
+            "newValue": "00:00:00",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "LENGTH OF STAY",
+            "newValue": "1",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "DEPARTURE DATE",
+            "newValue": "2026-03-09",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "ADVANCE CHECKED IN YN",
+            "newValue": "N",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "ADVANCE CHECK IN TIME",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "EXPECTED TIME OF RETURN",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "ETR COMMENTS",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "OPTED FOR COMM YN",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "CREDIT LIMIT AUTO PAY ALLOW YN",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "CHECKOUT TIME",
+            "newValue": "00:00:00",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "NUMBER OF ROOMS",
+            "newValue": "1",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "MEMBERSHIP NUMBER",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "MEMBERSHIP TYPE",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "AWARD CODE 1",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "08-MAR-26",
+            "scopeTo": "09-MAR-26",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "AWARD VOUCHER 1",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "08-MAR-26",
+            "scopeTo": "09-MAR-26",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "GP_ELIGIBILITY",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "08-MAR-26",
+            "scopeTo": "09-MAR-26",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "CONNECTING YN",
+            "newValue": "N",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "PRINT RATE YN",
+            "newValue": "Y",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "RESERVATION TYPE",
+            "newValue": "1",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "EXT SEG NO",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "SHARE YN",
+            "newValue": "N",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "PAYMENT METHOD",
+            "newValue": "DB",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "PAYMENT METHOD DESC",
+            "newValue": "Débiteur",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "CREDIT CARD NUMBER",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "PAN TOKEN",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "CREDIT CARD EXPIRATION DATE",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "AUTHORIZER",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "EXTERNAL USER ID",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "CREDIT CARD TYPE",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "SPECIAL REQUEST",
+            "newValue": "BAL",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "ROOM FEATURES",
+            "newValue": "CAS,NS,ALICE",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "PRODUCTS",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "PROMOTIONS",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "NO POST",
+            "newValue": "N",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "VIDEO CHECKOUT",
+            "newValue": "N",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "AUTHORIZE DIRECT BILL",
+            "newValue": "N",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "YIELD MARKET TYPE",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "TAX TYPE",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "ARRIVAL TRANSPORT TYPE",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "ARRIVAL STATION CODE",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "ARRIVAL CARRIER CODE",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "ARRIVAL TRANSPORT CODE",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "ARRIVAL DATETIME",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "ARRIVAL TRANSPORT TIME",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "ARRIVAL ESTIMATE TIME",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "ARRIVAL TRANSPORTATION",
+            "newValue": "N",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "ARRIVAL COMMENTS",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "DEPARTURE TRANSPORT TYPE",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "DEPARTURE STATION CODE",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "DEPARTURE CARRIER CODE",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "DEPARTURE TRANSPORT CODE",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "DEPARTURE DATETIME",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "DEPARTURE TRANSPORT TIME",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "DEPARTURE ESTIMATE TIME",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "DEPARTURE TRANSPORTATION",
+            "newValue": "N",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "DEPARTURE COMMENTS",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "COMMISSION PAID TO",
+            "newValue": "0",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "COMMISSION PAYOUT TO",
+            "newValue": "N",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "TA RECORD LOCATOR",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "HURDLE RATE",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "RATEABLE VALUE",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "RESTRICTION OVERRIDE",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "HURDLE OVERRIDE",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "YIELD STATUS",
+            "newValue": "N",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "SPG UPGRADE REASON CODE",
+            "newValue": "N",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "SPG DISCLOSE ROOM TYPE YN",
+            "newValue": "N",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "APP USER",
+            "newValue": "1345292917",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "EXTERNAL EFOLIO YN",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "FOLIO OPT IN",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "CONFIRMATION LETTER YN",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "WAITLIST PRIORITY",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "WAITLIST REASON CODE",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "WAITLIST REASON DESCRIPTION",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "INSERT DATE",
+            "newValue": "2026-04-14T10:42:12",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UPDATE DATE",
+            "newValue": "2026-04-14T10:43:27",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UPDATE USER",
+            "newValue": "1345292917",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "FOLIO FLAG",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "CANCELLATION TIME",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "CANCELLATION DATE",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "CANCELLATION NO",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "CANCELLATION REASON CODE",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "CANCELLATION REASON DESCRIPTION",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF CHAR 01",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF CHAR 02",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF CHAR 03",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF CHAR 04",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF CHAR 05",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF CHAR 06",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF CHAR 07",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF CHAR 08",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF CHAR 09",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF CHAR 10",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF CHAR 11",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF CHAR 12",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF CHAR 13",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF CHAR 14",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF CHAR 15",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF CHAR 16",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF CHAR 17",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF CHAR 18",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF CHAR 19",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF CHAR 20",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF CHAR 21",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF CHAR 22",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF CHAR 23",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF CHAR 24",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF CHAR 25",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF CHAR 26",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF CHAR 27",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF CHAR 28",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF CHAR 29",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF CHAR 30",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF CHAR 31",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF CHAR 32",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF CHAR 33",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF CHAR 34",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF CHAR 35",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF CHAR 36",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF CHAR 37",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF CHAR 38",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF CHAR 39",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF CHAR 40",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF NUMBER 01",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF NUMBER 02",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF NUMBER 03",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF NUMBER 04",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF NUMBER 05",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF NUMBER 06",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF NUMBER 07",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF NUMBER 08",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF NUMBER 09",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF NUMBER 10",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF NUMBER 11",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF NUMBER 12",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF NUMBER 13",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF NUMBER 14",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF NUMBER 15",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF NUMBER 16",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF NUMBER 17",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF NUMBER 18",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF NUMBER 19",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF NUMBER 20",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF NUMBER 21",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF NUMBER 22",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF NUMBER 23",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF NUMBER 24",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF NUMBER 25",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF NUMBER 26",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF NUMBER 27",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF NUMBER 28",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF NUMBER 29",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF NUMBER 30",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF NUMBER 31",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF NUMBER 32",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF NUMBER 33",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF NUMBER 34",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF NUMBER 35",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF NUMBER 36",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF NUMBER 37",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF NUMBER 38",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF NUMBER 39",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF NUMBER 40",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF DATE 01",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF DATE 02",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF DATE 03",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF DATE 04",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF DATE 05",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF DATE 06",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF DATE 07",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF DATE 08",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF DATE 09",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF DATE 10",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF DATE 11",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF DATE 12",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF DATE 13",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF DATE 14",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF DATE 15",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF DATE 16",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF DATE 17",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF DATE 18",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF DATE 19",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UDF DATE 20",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "PARENT RESV NAME ID",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "SPLIT YN",
+            "newValue": "N",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "COMP TYPE",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "CREDIT CARD VAULT ID",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "CREDIT CARD NUMBER 4 DIGITS",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "BASE RATE CODE",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "LOCAL BASE RATE AMOUNT",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "BASE RATE CURRENCY CODE",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "ADULTS",
+            "newValue": "1",
+            "oldValue": "",
+            "scopeFrom": "08-MAR-26",
+            "scopeTo": "09-MAR-26",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "CHILDREN",
+            "newValue": "0",
+            "oldValue": "",
+            "scopeFrom": "08-MAR-26",
+            "scopeTo": "09-MAR-26",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "CHILDREN 1",
+            "newValue": "0",
+            "oldValue": "",
+            "scopeFrom": "08-MAR-26",
+            "scopeTo": "09-MAR-26",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "CHILDREN 2",
+            "newValue": "0",
+            "oldValue": "",
+            "scopeFrom": "08-MAR-26",
+            "scopeTo": "09-MAR-26",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "CHILDREN 3",
+            "newValue": "0",
+            "oldValue": "",
+            "scopeFrom": "08-MAR-26",
+            "scopeTo": "09-MAR-26",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "CURRENCY CODE",
+            "newValue": "EUR",
+            "oldValue": "",
+            "scopeFrom": "08-MAR-26",
+            "scopeTo": "09-MAR-26",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "DISCOUNT REASON RULE",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "09-MAR-26",
+            "scopeTo": "09-MAR-26",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "DISCOUNT REASON RULE",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "08-MAR-26",
+            "scopeTo": "08-MAR-26",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "MARKET CODE",
+            "newValue": "LOC",
+            "oldValue": "",
+            "scopeFrom": "08-MAR-26",
+            "scopeTo": "09-MAR-26",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "ORIGIN",
+            "newValue": "PHONE",
+            "oldValue": "",
+            "scopeFrom": "08-MAR-26",
+            "scopeTo": "09-MAR-26",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "PREFERENCE GROUP",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "1",
+            "elementType": "1ER ET",
+            "elementRole": ""
+          },
+          {
+            "elementName": "PREFERENCE TYPE",
+            "newValue": "1ER ET",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "1",
+            "elementType": "1ER ET",
+            "elementRole": ""
+          },
+          {
+            "elementName": "PREFERENCE TYPE DESCRIPTION",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "1",
+            "elementType": "1ER ET",
+            "elementRole": ""
+          },
+          {
+            "elementName": "RATE AMOUNT",
+            "newValue": "577",
+            "oldValue": "",
+            "scopeFrom": "08-MAR-26",
+            "scopeTo": "09-MAR-26",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "RATE CODE",
+            "newValue": "LOC1BRANADOC",
+            "oldValue": "",
+            "scopeFrom": "08-MAR-26",
+            "scopeTo": "09-MAR-26",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "ROOM TYPE",
+            "newValue": "SI",
+            "oldValue": "",
+            "scopeFrom": "08-MAR-26",
+            "scopeTo": "09-MAR-26",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "RTC",
+            "newValue": "SI",
+            "oldValue": "",
+            "scopeFrom": "08-MAR-26",
+            "scopeTo": "09-MAR-26",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "SHARE AMOUNT ORIGINAL",
+            "newValue": "577",
+            "oldValue": "",
+            "scopeFrom": "08-MAR-26",
+            "scopeTo": "09-MAR-26",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "SOURCE CODE",
+            "newValue": "SOC",
+            "oldValue": "",
+            "scopeFrom": "08-MAR-26",
+            "scopeTo": "09-MAR-26",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UPSELL RULE",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "UPSOLD",
+            "newValue": "N",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "JOINTO RESV NAME ID",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "",
+            "scopeTo": "",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "BLOCK CODE",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "08-MAR-26",
+            "scopeTo": "09-MAR-26",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "DISCOUNT AMOUNT",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "08-MAR-26",
+            "scopeTo": "09-MAR-26",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "DISCOUNT PERCENT",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "08-MAR-26",
+            "scopeTo": "09-MAR-26",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "DISCOUNT REASON",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "08-MAR-26",
+            "scopeTo": "09-MAR-26",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "FIXED RATE",
+            "newValue": "N",
+            "oldValue": "",
+            "scopeFrom": "08-MAR-26",
+            "scopeTo": "09-MAR-26",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "PURPOSE OF STAY",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "08-MAR-26",
+            "scopeTo": "09-MAR-26",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "ROOM",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "08-MAR-26",
+            "scopeTo": "09-MAR-26",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "ROOM STATUS",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "08-MAR-26",
+            "scopeTo": "09-MAR-26",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          },
+          {
+            "elementName": "SCHEDULED ROOM MOVE STATUS",
+            "newValue": "",
+            "oldValue": "",
+            "scopeFrom": "08-MAR-26",
+            "scopeTo": "09-MAR-26",
+            "elementSequence": "",
+            "elementType": "",
+            "elementRole": ""
+          }
+        ]
+      }
+    }
+  }
+}

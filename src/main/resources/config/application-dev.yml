@@ -19,8 +19,36 @@ logging:
     tech.jhipster: DEBUG
     org.hibernate.SQL: DEBUG
     mc.sbm.operaconductor: DEBUG
+    javax.management.remote.rmi: WARN
 
 spring:
+  # Kafka Configuration
+  kafka:
+    bootstrap-servers: localhost:9092
+    properties:
+      application.id: opera-conductor-app
+      security.protocol: 'PLAINTEXT'
+      sasl.mechanism: ''
+      sasl.jaas.config: ''
+      ssl.sslTruststoreLocation: ''
+      ssl.sslTruststorePassword: ''
+      auto.offset.reset: earliest
+
+    producer:
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+
+    consumer:
+      auto-offset-reset: earliest
+      enable-auto-commit: false
+      session-timeout-ms: 30000
+      heartbeat-interval-ms: 10000
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: 'mc.sbm.simphonycloud.*'
+    topics:
+      logs-topic: logs-simphony-streamburner
   devtools:
     restart:
       enabled: true
@@ -32,14 +60,16 @@ spring:
       indent-output: true
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:h2:file:./build/h2db/db/OperaConductor;DB_CLOSE_DELAY=-1
+    url: jdbc:oracle:thin:@localhost:1521/XEPDB1
+    username: system
+    password: oracle
     hikari:
       poolName: Hikari
       auto-commit: false
   h2:
     console:
       # JHipster uses a custom h2-console initializer
-      enabled: true
+      enabled: false
   liquibase:
     # Remove 'faker' if you do not want the sample data to be loaded automatically
     contexts: dev, faker
@@ -52,7 +82,7 @@ spring:
     cache: false
 
 server:
-  port: 8080
+  port: 9090
   # make sure requests the proxy uri instead of the server one
   forward-headers-strategy: native
 
@@ -103,3 +133,4 @@ jhipster:
 # ===================================================================
 
 # application:
+env: dev
