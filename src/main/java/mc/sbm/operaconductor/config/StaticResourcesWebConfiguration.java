@@ -19,6 +19,7 @@ public class StaticResourcesWebConfiguration implements WebMvcConfigurer {
 
     private final JHipsterProperties jhipsterProperties;
 
+    /** Creates a new StaticResourcesWebConfiguration with the given JHipster properties. */
     public StaticResourcesWebConfiguration(JHipsterProperties jHipsterProperties) {
         this.jhipsterProperties = jHipsterProperties;
     }

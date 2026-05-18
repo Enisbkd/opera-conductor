@@ -27,6 +27,7 @@ public class DatabaseConfiguration {
 
     private final Environment env;
 
+    /** Creates a new DatabaseConfiguration with the given Spring environment. */
     public DatabaseConfiguration(Environment env) {
         this.env = env;
     }

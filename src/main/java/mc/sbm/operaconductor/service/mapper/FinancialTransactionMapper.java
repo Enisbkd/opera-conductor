@@ -1,13 +1,21 @@
 package mc.sbm.operaconductor.service.mapper;
 
+import java.time.LocalDateTime;
 import java.util.Map;
 import java.util.stream.Collectors;
+import lombok.RequiredArgsConstructor;
 import mc.sbm.operaconductor.GenericEvent;
 import mc.sbm.operaconductor.domain.FinancialTransactionDto;
+import mc.sbm.operaconductor.domain.event.CashieringPostingEvent;
+import mc.sbm.operaconductor.repository.event.CashieringPostingEventRepository;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
 @Component
+@RequiredArgsConstructor
 public class FinancialTransactionMapper implements SinkMapper<FinancialTransactionDto> {
+
+    private final CashieringPostingEventRepository repository;
 
     @Override
     public String eventKey() {
@@ -24,108 +32,64 @@ public class FinancialTransactionMapper implements SinkMapper<FinancialTransacti
         return FinancialTransactionDto.class;
     }
 
-    public static FinancialTransactionDto fromEvent(GenericEvent event) {
-        Map<String, String> details = event
+    @Override
+    @Transactional
+    public void sink(FinancialTransactionDto dto) {
+        repository.save(toEntity(dto, "NEW POSTING"));
+    }
+
+    static FinancialTransactionDto fromEvent(GenericEvent event) {
+        Map<String, String> d = event
             .getDetail()
             .stream()
             .collect(
-                Collectors.toMap(
-                    d -> d.getElementName(),
-                    d -> d.getNewValue() != null ? d.getNewValue() : "",
-                    (existing, replacement) -> existing
-                )
+                Collectors.toMap(GenericEvent.EventDetail::getElementName, e -> e.getNewValue() != null ? e.getNewValue() : "", (a, b) -> a)
             );
-
         return FinancialTransactionDto.builder()
             .timestamp(event.getTimestamp())
-            .amount(details.get("AMOUNT"))
-            .approvalCode(details.get("APPROVAL CODE"))
-            .approvalDate(details.get("APPROVAL DATE"))
-            .approvalStatus(details.get("APPROVAL STATUS"))
-            .authorizer(details.get("AUTHORIZER"))
-            .cashier(details.get("CASHIER"))
-            .confirmationNo(details.get("CONFIRMATION NO"))
-            .confirmationLegNo(details.get("CONFIRMATION LEG NO"))
-            .compNo(details.get("COMP NO"))
-            .credit(details.get("CREDIT"))
-            .currencyCode(details.get("CURRENCY CODE"))
-            .debit(details.get("DEBIT"))
-            .guestNameId(details.get("GUEST NAME ID"))
-            .firstName(details.get("FIRST NAME"))
-            .name(details.get("NAME"))
-            .membershipNumber(details.get("MEMBERSHIP NUMBER"))
-            .membershipType(details.get("MEMBERSHIP TYPE"))
-            .resvNameId(details.get("RESV NAME ID"))
-            .room(details.get("ROOM"))
-            .subGroup(details.get("SUB GROUP"))
-            .transactionCode(details.get("TRANSACTION CODE"))
-            .transactionDesc(details.get("TRANSACTION DESC"))
-            .transactionId(details.get("TRANSACTION ID"))
-            .transactionStatus(details.get("TRANSACTION STATUS"))
-            .transactionDate(details.get("TRANSACTION DATE"))
-            .window(details.get("WINDOW"))
-            .userName(details.get("USER NAME"))
-            .externalUserId(details.get("EXTERNAL USER ID"))
-            .trxAmount(details.get("TRX AMOUNT"))
-            .postedAmount(details.get("POSTED AMOUNT"))
-            .depositCredit(details.get("DEPOSIT CREDIT"))
-            .depositDebit(details.get("DEPOSIT DEBIT"))
-            .articleId(details.get("ARTICLE ID"))
-            .arCredit(details.get("AR CREDIT"))
-            .arDebit(details.get("AR DEBIT"))
-            .arNumberId(details.get("AR NUMBER ID"))
-            .arState(details.get("AR STATE"))
-            .arTransferDate(details.get("AR TRANSFER DATE"))
-            .autoCreditbillYn(details.get("AUTO CREDITBILL YN"))
-            .autoSettleYn(details.get("AUTO SETTLE YN"))
-            .billNumber(details.get("BILL NUMBER"))
-            .businessDate(details.get("BUSINESS DATE"))
-            .cashierCredit(details.get("CASHIER CREDIT"))
-            .cashierDebit(details.get("CASHIER DEBIT"))
-            .checkNumber(details.get("CHECK NUMBER"))
-            .covers(details.get("COVERS"))
-            .creditCardId(details.get("CREDIT CARD ID"))
-            .currency(details.get("CURRENCY"))
-            .depTaxTransferedYn(details.get("DEP TAX TRANSFERED YN"))
-            .exchangeRate(details.get("EXCHANGE RATE"))
-            .fiscalBillNo(details.get("FISCAL BILL NO"))
-            .folioNo(details.get("FOLIO NO"))
-            .folioType(details.get("FOLIO TYPE"))
-            .fromResvId(details.get("FROM RESV ID"))
-            .grossAmount(details.get("GROSS AMOUNT"))
-            .guestCredit(details.get("GUEST CREDIT"))
-            .guestDebit(details.get("GUEST DEBIT"))
-            .insertDate(details.get("INSERT DATE"))
-            .insertUser(details.get("INSERT USER"))
-            .invoiceNo(details.get("INVOICE NO"))
-            .marketCode(details.get("MARKET CODE"))
-            .netAmount(details.get("NET AMOUNT"))
-            .originalResvNameId(details.get("ORIGINAL RESV NAME ID"))
-            .originalRoom(details.get("ORIGINAL ROOM"))
-            .passerByName(details.get("PASSER BY NAME"))
-            .postitYn(details.get("POSTIT YN"))
-            .product(details.get("PRODUCT"))
-            .quantity(details.get("QUANTITY"))
-            .reference(details.get("REFERENCE"))
-            .remark(details.get("REMARK"))
-            .updateDate(details.get("UPDATE DATE"))
-            .updateUser(details.get("UPDATE USER"))
-            .depositTransactionId(details.get("DEPOSIT TRANSACTION ID"))
-            .packageTransactionId(details.get("PACKAGE TRANSACTION ID"))
-            .adjustTransactionId(details.get("ADJUST TRANSACTION ID"))
-            .taxTransactionId(details.get("TAX TRANSACTION ID"))
-            .toResvNameId(details.get("TO RESV NAME ID"))
-            .taxRate(details.get("TAX RATE"))
-            .taxRateType(details.get("TAX RATE TYPE"))
-            .routedYn(details.get("ROUTED YN"))
-            .routingDate(details.get("ROUTING DATE"))
-            .roomClass(details.get("ROOM CLASS"))
-            .resvDepositId(details.get("RESV DEPOSIT ID"))
-            .revenueAmt(details.get("REVENUE AMT"))
-            .reversePaymentTrxNo(details.get("REVERSE PAYMENT TRX NO"))
-            .rateCode(details.get("RATE CODE"))
-            .recptNo(details.get("RECPT NO"))
-            .recptType(details.get("RECPT TYPE"))
+            .businessDate(d.get("BUSINESS DATE"))
+            .fromResvId(d.get("FROM RESV ID"))
+            .grossAmount(d.get("GROSS AMOUNT"))
+            .guestAccountCredit(d.get("GUEST ACCOUNT CREDIT"))
+            .guestAccountDebit(d.get("GUEST ACCOUNT DEBIT"))
+            .marketCode(d.get("MARKET CODE"))
+            .nameId(d.get("NAME ID"))
+            .rateCode(d.get("RATE CODE"))
+            .resvNameId(d.get("RESV NAME ID"))
+            .room(d.get("ROOM"))
+            .trxAmount(d.get("TRX AMOUNT"))
+            .transactionCode(d.get("TRANSACTION CODE"))
+            .trxDate(d.get("TRX DATE"))
+            .folioType(d.get("FOLIO_TYPE"))
+            .postingDate(d.get("TRANSACTION DATE"))
+            .remark(d.get("TRANSACTION DESC"))
+            .build();
+    }
+
+    static CashieringPostingEvent toEntity(FinancialTransactionDto dto, String eventName) {
+        return CashieringPostingEvent.builder()
+            .primaryKey(dto.getResvNameId() != null ? dto.getResvNameId() : "")
+            .hotelId("")
+            .moduleName("Cashiering")
+            .eventName(eventName)
+            .eventTimestamp(dto.getTimestamp())
+            .businessDate(dto.getBusinessDate())
+            .fromResvId(dto.getFromResvId())
+            .grossAmount(dto.getGrossAmount())
+            .guestAccountCredit(dto.getGuestAccountCredit())
+            .guestAccountDebit(dto.getGuestAccountDebit())
+            .marketCode(dto.getMarketCode())
+            .nameId(dto.getNameId())
+            .rateCode(dto.getRateCode())
+            .resvNameId(dto.getResvNameId())
+            .room(dto.getRoom())
+            .trxAmount(dto.getTrxAmount())
+            .transactionCode(dto.getTransactionCode())
+            .trxDate(dto.getTrxDate())
+            .folioType(dto.getFolioType())
+            .postingDate(dto.getPostingDate())
+            .remark(dto.getRemark())
+            .processedAt(LocalDateTime.now())
             .build();
     }
 }

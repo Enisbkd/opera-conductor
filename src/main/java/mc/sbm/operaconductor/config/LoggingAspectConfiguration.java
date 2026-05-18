@@ -9,6 +9,7 @@ import tech.jhipster.config.JHipsterConstants;
 @EnableAspectJAutoProxy
 public class LoggingAspectConfiguration {
 
+    /** Provides the LoggingAspect bean, active only in the development profile. */
     @Bean
     @Profile(JHipsterConstants.SPRING_PROFILE_DEVELOPMENT)
     public LoggingAspect loggingAspect(Environment env) {

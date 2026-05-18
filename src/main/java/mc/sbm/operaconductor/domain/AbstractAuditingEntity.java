@@ -25,6 +25,7 @@ public abstract class AbstractAuditingEntity<T> implements Serializable {
     @Serial
     private static final long serialVersionUID = 1L;
 
+    /** Returns the primary key of this entity. */
     public abstract T getId();
 
     @CreatedBy

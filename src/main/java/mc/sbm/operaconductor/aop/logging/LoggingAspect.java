@@ -23,6 +23,7 @@ public class LoggingAspect {
 
     private final Environment env;
 
+    /** Creates a new LoggingAspect with the given Spring environment. */
     public LoggingAspect(Environment env) {
         this.env = env;
     }

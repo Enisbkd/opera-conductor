@@ -25,6 +25,7 @@ public class SecurityJwtConfiguration {
     @Value("${jhipster.security.authentication.jwt.base64-secret}")
     private String jwtKey;
 
+    /** Provides the JWT decoder bean with error tracking via SecurityMetersService. */
     @Bean
     public JwtDecoder jwtDecoder(SecurityMetersService metersService) {
         NimbusJwtDecoder jwtDecoder = NimbusJwtDecoder.withSecretKey(getSecretKey()).macAlgorithm(JWT_ALGORITHM).build();
@@ -50,6 +51,7 @@ public class SecurityJwtConfiguration {
         };
     }
 
+    /** Provides the JWT encoder bean using the configured HMAC secret key. */
     @Bean
     public JwtEncoder jwtEncoder() {
         return new NimbusJwtEncoder(new ImmutableSecret<>(getSecretKey()));

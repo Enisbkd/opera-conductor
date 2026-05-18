@@ -17,6 +17,7 @@ public class CacheConfiguration {
 
     private final javax.cache.configuration.Configuration<Object, Object> jcacheConfiguration;
 
+    /** Creates a new CacheConfiguration and initializes the JCache configuration. */
     public CacheConfiguration(JHipsterProperties jHipsterProperties) {
         var ehcache = jHipsterProperties.getCache().getEhcache();
 
@@ -31,11 +32,13 @@ public class CacheConfiguration {
         );
     }
 
+    /** Provides a customizer that registers the JCache manager with Hibernate's second-level cache. */
     @Bean
     public HibernatePropertiesCustomizer hibernatePropertiesCustomizer(javax.cache.CacheManager cacheManager) {
         return hibernateProperties -> hibernateProperties.put(ConfigSettings.CACHE_MANAGER, cacheManager);
     }
 
+    /** Provides a JCache manager customizer that pre-creates all application caches. */
     @Bean
     public JCacheManagerCustomizer cacheManagerCustomizer() {
         return cm -> {

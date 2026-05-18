@@ -20,26 +20,32 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserMapper {
 
+    /** Converts a list of User entities to a list of UserDTOs. */
     public List<UserDTO> usersToUserDTOs(List<User> users) {
         return users.stream().filter(Objects::nonNull).map(this::userToUserDTO).toList();
     }
 
+    /** Converts a User entity to a UserDTO. */
     public UserDTO userToUserDTO(User user) {
         return new UserDTO(user);
     }
 
+    /** Converts a list of User entities to a list of AdminUserDTOs. */
     public List<AdminUserDTO> usersToAdminUserDTOs(List<User> users) {
         return users.stream().filter(Objects::nonNull).map(this::userToAdminUserDTO).toList();
     }
 
+    /** Converts a User entity to an AdminUserDTO. */
     public AdminUserDTO userToAdminUserDTO(User user) {
         return new AdminUserDTO(user);
     }
 
+    /** Converts a list of AdminUserDTOs to a list of User entities. */
     public List<User> userDTOsToUsers(List<AdminUserDTO> userDTOs) {
         return userDTOs.stream().filter(Objects::nonNull).map(this::userDTOToUser).toList();
     }
 
+    /** Converts an AdminUserDTO to a User entity. */
     public User userDTOToUser(AdminUserDTO userDTO) {
         if (userDTO == null) {
             return null;
@@ -80,6 +86,7 @@ public class UserMapper {
         return authorities;
     }
 
+    /** Creates a User entity from an ID. */
     public User userFromId(Long id) {
         if (id == null) {
             return null;
@@ -89,6 +96,7 @@ public class UserMapper {
         return user;
     }
 
+    /** Converts a User to a UserDTO containing only the id field. */
     @Named("id")
     @BeanMapping(ignoreByDefault = true)
     @Mapping(target = "id", source = "id")
@@ -101,6 +109,7 @@ public class UserMapper {
         return userDto;
     }
 
+    /** Converts a set of Users to a set of UserDTOs containing only the id field. */
     @Named("idSet")
     @BeanMapping(ignoreByDefault = true)
     @Mapping(target = "id", source = "id")
@@ -117,6 +126,7 @@ public class UserMapper {
         return userSet;
     }
 
+    /** Converts a User to a UserDTO containing only the id and login fields. */
     @Named("login")
     @BeanMapping(ignoreByDefault = true)
     @Mapping(target = "id", source = "id")
@@ -131,6 +141,7 @@ public class UserMapper {
         return userDto;
     }
 
+    /** Converts a set of Users to a set of UserDTOs containing only the id and login fields. */
     @Named("loginSet")
     @BeanMapping(ignoreByDefault = true)
     @Mapping(target = "id", source = "id")

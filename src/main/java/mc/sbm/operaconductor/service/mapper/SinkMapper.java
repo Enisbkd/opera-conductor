@@ -14,7 +14,12 @@ public interface SinkMapper<T> {
      */
     String eventKey();
 
+    /** Maps the given generic event payload to the target domain object. */
     T map(GenericEvent event);
 
+    /** Returns the target class that this mapper produces. */
     Class<T> targetClass();
+
+    /** Persist the mapped value to the database. Default is a no-op; override to save. */
+    default void sink(T mapped) {}
 }

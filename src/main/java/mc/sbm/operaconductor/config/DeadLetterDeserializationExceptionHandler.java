@@ -19,9 +19,10 @@ public class DeadLetterDeserializationExceptionHandler implements Deserializatio
     private static KafkaTemplate<String, Object> staticKafkaTemplate;
     private static String staticDeadLetterTopic = "data-sim-deadletter-" + env;
 
-    // Kafka Streams needs this
+    /** Creates a new instance (required by Kafka Streams). */
     public DeadLetterDeserializationExceptionHandler() {}
 
+    /** Sets the shared KafkaTemplate and dead-letter topic name used by all handler instances. */
     public static void setKafkaTemplate(KafkaTemplate<String, Object> kafkaTemplate, String topic) {
         staticKafkaTemplate = kafkaTemplate;
         staticDeadLetterTopic = topic;
@@ -72,6 +73,7 @@ public class DeadLetterDeserializationExceptionHandler implements Deserializatio
         public String errorMessage;
         public byte[] rawValue;
 
+        /** Creates a new DeadLetterMessage with the given metadata and raw payload. */
         public DeadLetterMessage(String sourceTopic, int partition, long offset, String errorMessage, byte[] rawValue) {
             this.sourceTopic = sourceTopic;
             this.partition = partition;

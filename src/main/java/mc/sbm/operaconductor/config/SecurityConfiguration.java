@@ -31,16 +31,19 @@ public class SecurityConfiguration {
 
     private final JHipsterProperties jHipsterProperties;
 
+    /** Creates a new SecurityConfiguration with the given environment and JHipster properties. */
     public SecurityConfiguration(Environment env, JHipsterProperties jHipsterProperties) {
         this.env = env;
         this.jHipsterProperties = jHipsterProperties;
     }
 
+    /** Provides the BCrypt password encoder bean. */
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
 
+    /** Configures the Spring Security filter chain with JWT and authorization rules. */
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) {
         http

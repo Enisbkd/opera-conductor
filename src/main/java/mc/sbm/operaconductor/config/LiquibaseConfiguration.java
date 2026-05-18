@@ -25,10 +25,12 @@ public class LiquibaseConfiguration {
 
     private final Environment env;
 
+    /** Creates a new LiquibaseConfiguration with the given Spring environment. */
     public LiquibaseConfiguration(Environment env) {
         this.env = env;
     }
 
+    /** Configures and provides the SpringLiquibase bean used to run database migrations. */
     @Bean
     public SpringLiquibase liquibase(
         @Qualifier("taskExecutor") Executor executor,

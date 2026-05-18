@@ -28,6 +28,7 @@ public class OperaConductorApp {
 
     private final Environment env;
 
+    /** Creates a new OperaConductorApp with the given Spring environment. */
     public OperaConductorApp(Environment env) {
         this.env = env;
     }

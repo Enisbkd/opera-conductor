@@ -18,6 +18,7 @@ public class SecurityMetersService {
     private final Counter tokenUnsupportedCounter;
     private final Counter tokenMalformedCounter;
 
+    /** Creates a new SecurityMetersService and registers Micrometer counters. */
     public SecurityMetersService(MeterRegistry registry) {
         this.tokenInvalidSignatureCounter = invalidTokensCounterForCauseBuilder("invalid-signature").register(registry);
         this.tokenExpiredCounter = invalidTokensCounterForCauseBuilder("expired").register(registry);
@@ -32,18 +33,22 @@ public class SecurityMetersService {
             .tag(INVALID_TOKENS_METER_CAUSE_DIMENSION, cause);
     }
 
+    /** Records a token invalid-signature authentication failure. */
     public void trackTokenInvalidSignature() {
         this.tokenInvalidSignatureCounter.increment();
     }
 
+    /** Records an expired token authentication failure. */
     public void trackTokenExpired() {
         this.tokenExpiredCounter.increment();
     }
 
+    /** Records an unsupported token authentication failure. */
     public void trackTokenUnsupported() {
         this.tokenUnsupportedCounter.increment();
     }
 
+    /** Records a malformed token authentication failure. */
     public void trackTokenMalformed() {
         this.tokenMalformedCounter.increment();
     }

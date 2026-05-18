@@ -17,10 +17,12 @@ public class UserDTO implements Serializable {
 
     private String login;
 
+    /** Creates a new empty UserDTO (required by Jackson). */
     public UserDTO() {
         // Empty constructor needed for Jackson.
     }
 
+    /** Creates a UserDTO populated with public fields from the given User entity. */
     public UserDTO(User user) {
         this.id = user.getId();
         // Customize it here if you need, or not, firstName/lastName/etc

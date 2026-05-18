@@ -40,6 +40,7 @@ public class AccountResource {
 
     private final MailService mailService;
 
+    /** Creates a new AccountResource with the required service dependencies. */
     public AccountResource(UserRepository userRepository, UserService userService, MailService mailService) {
         this.userRepository = userRepository;
         this.userService = userService;

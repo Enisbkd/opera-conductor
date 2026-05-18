@@ -41,6 +41,7 @@ public class UserService {
 
     private final CacheManager cacheManager;
 
+    /** Creates a new UserService with the required dependencies. */
     public UserService(
         UserRepository userRepository,
         PasswordEncoder passwordEncoder,
@@ -53,6 +54,7 @@ public class UserService {
         this.cacheManager = cacheManager;
     }
 
+    /** Activates a user registration using the given activation key. */
     public Optional<User> activateRegistration(String key) {
         LOG.debug("Activating user for activation key {}", key);
         return userRepository
@@ -67,6 +69,7 @@ public class UserService {
             });
     }
 
+    /** Completes the password reset process using the given reset key and new password. */
     public Optional<User> completePasswordReset(String newPassword, String key) {
         LOG.debug("Reset user password for reset key {}", key);
         return userRepository
@@ -81,6 +84,7 @@ public class UserService {
             });
     }
 
+    /** Initiates a password reset request for the user with the given email address. */
     public Optional<User> requestPasswordReset(String mail) {
         return userRepository
             .findOneByEmailIgnoreCase(mail)
@@ -93,6 +97,7 @@ public class UserService {
             });
     }
 
+    /** Registers a new user with the provided details and initial password. */
     public User registerUser(AdminUserDTO userDTO, String password) {
         userRepository
             .findOneByLogin(userDTO.getLogin().toLowerCase())
@@ -145,6 +150,7 @@ public class UserService {
         return true;
     }
 
+    /** Creates a new user from the given DTO with a generated password. */
     public User createUser(AdminUserDTO userDTO) {
         User user = new User();
         user.setLogin(userDTO.getLogin().toLowerCase());
@@ -218,6 +224,7 @@ public class UserService {
             .map(AdminUserDTO::new);
     }
 
+    /** Deletes the user with the given login. */
     public void deleteUser(String login) {
         userRepository
             .findOneByLogin(login)
@@ -254,6 +261,7 @@ public class UserService {
             });
     }
 
+    /** Changes the password of the currently authenticated user. */
     @Transactional
     public void changePassword(String currentClearTextPassword, String newPassword) {
         SecurityUtils.getCurrentUserLogin()
@@ -270,16 +278,19 @@ public class UserService {
             });
     }
 
+    /** Returns a paginated list of all managed users with full admin details. */
     @Transactional(readOnly = true)
     public Page<AdminUserDTO> getAllManagedUsers(Pageable pageable) {
         return userRepository.findAll(pageable).map(AdminUserDTO::new);
     }
 
+    /** Returns a paginated list of all activated public users. */
     @Transactional(readOnly = true)
     public Page<UserDTO> getAllPublicUsers(Pageable pageable) {
         return userRepository.findAllByIdNotNullAndActivatedIsTrue(pageable).map(UserDTO::new);
     }
 
+    /** Returns the user with their authorities loaded by login name. */
     @Transactional(readOnly = true)
     public Optional<User> getUserWithAuthoritiesByLogin(String login) {
         return userRepository.findOneWithAuthoritiesByLogin(login);

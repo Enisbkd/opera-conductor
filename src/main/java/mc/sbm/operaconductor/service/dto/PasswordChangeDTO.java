@@ -14,10 +14,12 @@ public class PasswordChangeDTO implements Serializable {
     private String currentPassword;
     private String newPassword;
 
+    /** Creates a new empty PasswordChangeDTO (required by Jackson). */
     public PasswordChangeDTO() {
         // Empty constructor needed for Jackson.
     }
 
+    /** Creates a PasswordChangeDTO with the given current and new passwords. */
     public PasswordChangeDTO(String currentPassword, String newPassword) {
         this.currentPassword = currentPassword;
         this.newPassword = newPassword;

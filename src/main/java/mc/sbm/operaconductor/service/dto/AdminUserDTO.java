@@ -53,10 +53,12 @@ public class AdminUserDTO implements Serializable {
 
     private Set<String> authorities;
 
+    /** Creates a new empty AdminUserDTO (required by Jackson). */
     public AdminUserDTO() {
         // Empty constructor needed for Jackson.
     }
 
+    /** Creates an AdminUserDTO populated from the given User entity. */
     public AdminUserDTO(User user) {
         this.id = user.getId();
         this.login = user.getLogin();

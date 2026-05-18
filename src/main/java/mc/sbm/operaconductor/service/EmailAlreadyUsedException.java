@@ -7,6 +7,7 @@ public class EmailAlreadyUsedException extends RuntimeException {
     @Serial
     private static final long serialVersionUID = 1L;
 
+    /** Creates a new EmailAlreadyUsedException with a default message. */
     public EmailAlreadyUsedException() {
         super("Email is already in use!");
     }

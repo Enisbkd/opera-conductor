@@ -24,12 +24,14 @@ public class KafkaStreamsProcessor {
     private final SinkMapperRegistry mapperRegistry;
     private final List<SinkMapper<?>> allMappers;
 
+    /** Creates a new KafkaStreamsProcessor with the given mapper registry and all available sink mappers. */
     @Autowired
     public KafkaStreamsProcessor(SinkMapperRegistry mapperRegistry, List<SinkMapper<?>> allMappers) {
         this.mapperRegistry = mapperRegistry;
         this.allMappers = allMappers;
     }
 
+    /** Builds the Kafka Streams processing pipeline, creating a sink branch for each registered mapper. */
     @Autowired
     public void buildPipeline(StreamsBuilder builder) {
         // Single shared stream from the one input topic
@@ -63,7 +65,9 @@ public class KafkaStreamsProcessor {
                 GenericEvent event = wrapper.getPayload().getData().getNewEvent();
                 String uniqueEventId = event.getMetadata() != null ? event.getMetadata().getUniqueEventId() : key;
                 log.debug("Mapping event eventKey={}, uniqueEventId={}", eventKey, uniqueEventId);
-                return KeyValue.pair(uniqueEventId, mapper.map(event));
+                T mapped = mapper.map(event);
+                mapper.sink(mapped);
+                return KeyValue.pair(uniqueEventId, mapped);
             })
             .to(eventKey, SerdeUtils.producedWith(mapper.targetClass()));
     }

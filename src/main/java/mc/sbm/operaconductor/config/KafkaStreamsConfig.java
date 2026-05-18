@@ -45,6 +45,7 @@ public class KafkaStreamsConfig {
 
     private final String trustStorePassword = System.getProperty("javax.net.ssl.trustStorePassword");
 
+    /** Provides the Kafka Streams configuration bean with all required connection and security settings. */
     @Bean(name = KafkaStreamsDefaultConfiguration.DEFAULT_STREAMS_CONFIG_BEAN_NAME)
     public KafkaStreamsConfiguration kStreamsConfig() {
         logger.info("Configuring Kafka Streams with bootstrap servers: {} and application ID: {}", bootstrapServers, applicationId);

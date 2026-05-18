@@ -17,6 +17,7 @@ public class JacksonConfiguration {
         return new JavaTimeModule();
     }
 
+    /** Provides the JDK 8 data types module for Jackson. */
     @Bean
     public Jdk8Module jdk8TimeModule() {
         return new Jdk8Module();

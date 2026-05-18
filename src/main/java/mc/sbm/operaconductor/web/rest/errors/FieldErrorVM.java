@@ -14,6 +14,7 @@ public class FieldErrorVM implements Serializable {
 
     private final String message;
 
+    /** Creates a new FieldErrorVM with the given object name, field, and validation message. */
     public FieldErrorVM(String dto, String field, String message) {
         this.objectName = dto;
         this.field = field;

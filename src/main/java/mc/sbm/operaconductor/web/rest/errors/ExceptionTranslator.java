@@ -58,10 +58,12 @@ public class ExceptionTranslator extends ResponseEntityExceptionHandler {
 
     private final Environment env;
 
+    /** Creates a new ExceptionTranslator with the given Spring environment. */
     public ExceptionTranslator(Environment env) {
         this.env = env;
     }
 
+    /** Handles any uncaught exception and maps it to an RFC 7807 problem detail response. */
     @ExceptionHandler
     public ResponseEntity<Object> handleAnyException(Throwable ex, NativeWebRequest request) {
         LOG.debug("Converting Exception to Problem Details:", ex);
@@ -240,6 +242,7 @@ public class ExceptionTranslator extends ResponseEntityExceptionHandler {
             : null;
     }
 
+    /** Builds an optional nested cause problem detail for the given throwable. */
     public Optional<ProblemDetailWithCause> buildCause(final Throwable throwable, NativeWebRequest request) {
         if (throwable != null && isCasualChainEnabled()) {
             return Optional.of(customizeProblem(getProblemDetailWithCause(throwable), throwable, request));

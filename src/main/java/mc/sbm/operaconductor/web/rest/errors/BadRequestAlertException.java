@@ -17,10 +17,12 @@ public class BadRequestAlertException extends ErrorResponseException {
 
     private final String errorKey;
 
+    /** Creates a new BadRequestAlertException with the default error type. */
     public BadRequestAlertException(String defaultMessage, String entityName, String errorKey) {
         this(ErrorConstants.DEFAULT_TYPE, defaultMessage, entityName, errorKey);
     }
 
+    /** Creates a new BadRequestAlertException with the given problem type URI. */
     public BadRequestAlertException(URI type, String defaultMessage, String entityName, String errorKey) {
         super(
             HttpStatus.BAD_REQUEST,

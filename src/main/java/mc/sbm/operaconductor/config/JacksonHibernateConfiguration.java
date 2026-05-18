@@ -8,9 +8,7 @@ import tools.jackson.datatype.hibernate7.Hibernate7Module.Feature;
 @Configuration
 public class JacksonHibernateConfiguration {
 
-    /*
-     * Support for Hibernate types in Jackson.
-     */
+    /** Provides the Hibernate 7 module for Jackson to handle Hibernate-specific types. */
     @Bean
     public Hibernate7Module hibernate7Module() {
         return new Hibernate7Module().configure(Feature.SERIALIZE_IDENTIFIER_FOR_LAZY_NOT_LOADED_OBJECTS, true);

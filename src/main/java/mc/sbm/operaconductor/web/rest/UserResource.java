@@ -86,6 +86,7 @@ public class UserResource {
 
     private final MailService mailService;
 
+    /** Creates a new UserResource with the required service dependencies. */
     public UserResource(UserService userService, UserRepository userRepository, MailService mailService) {
         this.userService = userService;
         this.userRepository = userRepository;

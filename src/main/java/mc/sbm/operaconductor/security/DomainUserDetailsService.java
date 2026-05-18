@@ -25,6 +25,7 @@ public class DomainUserDetailsService implements UserDetailsService {
 
     private final UserRepository userRepository;
 
+    /** Creates a new DomainUserDetailsService with the given user repository. */
     public DomainUserDetailsService(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
@@ -59,11 +60,13 @@ public class DomainUserDetailsService implements UserDetailsService {
 
         private final Long id;
 
+        /** Creates a new UserWithId with the given credentials, authorities, and internal ID. */
         public UserWithId(String login, String password, Collection<? extends GrantedAuthority> authorities, Long id) {
             super(login, password, authorities);
             this.id = id;
         }
 
+        /** Returns the internal database ID of this user. */
         public Long getId() {
             return id;
         }
@@ -78,6 +81,7 @@ public class DomainUserDetailsService implements UserDetailsService {
             return super.hashCode();
         }
 
+        /** Creates a UserWithId from a domain User entity. */
         public static UserWithId fromUser(User user) {
             return new UserWithId(
                 user.getLogin(),

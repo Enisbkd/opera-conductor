@@ -39,6 +39,7 @@ public class MailService {
 
     private final SpringTemplateEngine templateEngine;
 
+    /** Creates a new MailService with the required dependencies. */
     public MailService(
         JHipsterProperties jHipsterProperties,
         JavaMailSender javaMailSender,
@@ -51,6 +52,7 @@ public class MailService {
         this.templateEngine = templateEngine;
     }
 
+    /** Sends an email asynchronously to the specified recipient. */
     @Async
     public void sendEmail(String to, String subject, String content, boolean isMultipart, boolean isHtml) {
         sendEmailSync(to, subject, content, isMultipart, isHtml);
@@ -81,6 +83,7 @@ public class MailService {
         }
     }
 
+    /** Sends an email asynchronously to a user using a Thymeleaf template. */
     @Async
     public void sendEmailFromTemplate(User user, String templateName, String titleKey) {
         sendEmailFromTemplateSync(user, templateName, titleKey);
@@ -100,18 +103,21 @@ public class MailService {
         sendEmailSync(user.getEmail(), subject, content, false, true);
     }
 
+    /** Sends an account activation email to the given user. */
     @Async
     public void sendActivationEmail(User user) {
         LOG.debug("Sending activation email to '{}'", user.getEmail());
         sendEmailFromTemplateSync(user, "mail/activationEmail", "email.activation.title");
     }
 
+    /** Sends an account creation email to the given user. */
     @Async
     public void sendCreationEmail(User user) {
         LOG.debug("Sending creation email to '{}'", user.getEmail());
         sendEmailFromTemplateSync(user, "mail/creationEmail", "email.activation.title");
     }
 
+    /** Sends a password reset email to the given user. */
     @Async
     public void sendPasswordResetMail(User user) {
         LOG.debug("Sending password reset email to '{}'", user.getEmail());

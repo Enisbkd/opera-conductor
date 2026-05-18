@@ -27,6 +27,7 @@ public class PublicUserResource {
 
     private final UserService userService;
 
+    /** Creates a new PublicUserResource with the given user service. */
     public PublicUserResource(UserService userService) {
         this.userService = userService;
     }

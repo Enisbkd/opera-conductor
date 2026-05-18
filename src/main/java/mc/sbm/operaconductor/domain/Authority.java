@@ -39,6 +39,7 @@ public class Authority implements Serializable, Persistable<String> {
         return this.name;
     }
 
+    /** Sets the name and returns this instance for method chaining. */
     public Authority name(String name) {
         this.setName(name);
         return this;
@@ -48,6 +49,7 @@ public class Authority implements Serializable, Persistable<String> {
         this.name = name;
     }
 
+    /** Updates the persisted state flag after load or persist lifecycle events. */
     @PostLoad
     @PostPersist
     public void updateEntityState() {
@@ -66,6 +68,7 @@ public class Authority implements Serializable, Persistable<String> {
         return !this.isPersisted;
     }
 
+    /** Marks this entity as persisted and returns this instance. */
     public Authority setIsPersisted() {
         this.isPersisted = true;
         return this;

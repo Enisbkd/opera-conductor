@@ -18,6 +18,7 @@ import tools.jackson.databind.ObjectMapper;
 @Configuration
 public class LoggingConfiguration {
 
+    /** Configures Logback appenders based on application and JHipster logging properties. */
     public LoggingConfiguration(
         @Value("${spring.application.name}") String appName,
         @Value("${server.port}") String serverPort,

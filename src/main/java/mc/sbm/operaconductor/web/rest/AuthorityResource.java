@@ -35,6 +35,7 @@ public class AuthorityResource {
 
     private final AuthorityRepository authorityRepository;
 
+    /** Creates a new AuthorityResource with the given authority repository. */
     public AuthorityResource(AuthorityRepository authorityRepository) {
         this.authorityRepository = authorityRepository;
     }

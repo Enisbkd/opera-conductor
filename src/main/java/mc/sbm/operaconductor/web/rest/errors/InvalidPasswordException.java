@@ -11,6 +11,7 @@ public class InvalidPasswordException extends ErrorResponseException {
     @Serial
     private static final long serialVersionUID = 1L;
 
+    /** Creates a new InvalidPasswordException with a default message. */
     public InvalidPasswordException() {
         super(
             HttpStatus.BAD_REQUEST,

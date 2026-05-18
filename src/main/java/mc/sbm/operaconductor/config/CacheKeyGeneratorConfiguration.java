@@ -24,6 +24,7 @@ public class CacheKeyGeneratorConfiguration {
         this.buildProperties = buildProperties;
     }
 
+    /** Provides a prefixed cache key generator using git and build metadata. */
     @Bean
     public KeyGenerator keyGenerator() {
         return new PrefixedKeyGenerator(this.gitProperties, this.buildProperties);

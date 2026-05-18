@@ -35,6 +35,7 @@ public class WebConfigurer implements ServletContextInitializer, WebServerFactor
 
     private final JHipsterProperties jHipsterProperties;
 
+    /** Creates a new WebConfigurer with the given environment and JHipster properties. */
     public WebConfigurer(Environment env, JHipsterProperties jHipsterProperties) {
         this.env = env;
         this.jHipsterProperties = jHipsterProperties;
@@ -86,6 +87,7 @@ public class WebConfigurer implements ServletContextInitializer, WebServerFactor
         return extractedPath.substring(0, extractionEndIndex);
     }
 
+    /** Provides the CORS filter bean configured with JHipster CORS properties. */
     @Bean
     public CorsFilter corsFilter() {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
