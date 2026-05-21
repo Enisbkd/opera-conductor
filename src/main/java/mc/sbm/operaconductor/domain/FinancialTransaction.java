@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 import lombok.*;
 
 @Entity
-@Table(name = "FINANCIAL_TRANSACTIONS", schema = "OPERA")
+@Table(name = "oc_FINANCIAL_TRANSACTIONS", schema = "OPERA")
 @Getter
 @Setter
 @NoArgsConstructor

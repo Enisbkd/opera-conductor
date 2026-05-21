@@ -5,7 +5,7 @@ import lombok.*;
 import lombok.experimental.SuperBuilder;
 
 @Entity
-@Table(name = "new_profile_events")
+@Table(name = "oc_new_profile_events")
 @Data
 @EqualsAndHashCode(callSuper = true)
 @SuperBuilder
@@ -13,7 +13,6 @@ import lombok.experimental.SuperBuilder;
 @AllArgsConstructor
 public class NewProfileEvent extends BaseHotelEvent {
 
-    // NAME table
     private String nameId;
     private String nameType;
     private String name;
@@ -34,8 +33,6 @@ public class NewProfileEvent extends BaseHotelEvent {
     private String vipStatus;
     private String profession;
     private String insertDate;
-
-    // MEMBERSHIPS table
     private String membershipInactiveDate;
     private String membershipCardNo;
     private String membershipType;

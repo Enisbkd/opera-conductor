@@ -4,8 +4,8 @@ import java.time.LocalDateTime;
 import lombok.RequiredArgsConstructor;
 import mc.sbm.operaconductor.GenericEvent;
 import mc.sbm.operaconductor.domain.ReservationDto;
-import mc.sbm.operaconductor.domain.event.UpdateReservationEvent;
-import mc.sbm.operaconductor.repository.event.UpdateReservationEventRepository;
+import mc.sbm.operaconductor.domain.event.ReservationName;
+import mc.sbm.operaconductor.repository.event.NewReservationEventRepository;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -13,11 +13,11 @@ import org.springframework.transaction.annotation.Transactional;
 @RequiredArgsConstructor
 public class ReservationUpdateReservationMapper extends ReservationBaseMapper {
 
-    private final UpdateReservationEventRepository repository;
+    private final NewReservationEventRepository repository;
 
     @Override
     public String eventKey() {
-        return "RESERVATION_UPDATE_RESERVATION";
+        return "<RESERVATION_UPDATE_RESERVATION>";
     }
 
     @Override
@@ -28,7 +28,7 @@ public class ReservationUpdateReservationMapper extends ReservationBaseMapper {
     @Override
     @Transactional
     public void sink(ReservationDto dto) {
-        UpdateReservationEvent entity = UpdateReservationEvent.builder()
+        ReservationName entity = ReservationName.builder()
             .primaryKey(dto.getPrimaryKey())
             .hotelId(dto.getHotelId())
             .moduleName("Reservation")
@@ -60,7 +60,9 @@ public class ReservationUpdateReservationMapper extends ReservationBaseMapper {
             .actionDate(dto.getActionDate())
             .room(dto.getRoom())
             .processedAt(LocalDateTime.now())
+            .membershipId(dto.getMembershipId())
             .build();
+        repository.deleteReservationNameByPrimaryKey(Long.valueOf(dto.getPrimaryKey()));
         repository.save(entity);
     }
 }

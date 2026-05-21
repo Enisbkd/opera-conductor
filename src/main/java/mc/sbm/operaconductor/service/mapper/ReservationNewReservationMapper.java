@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 import lombok.RequiredArgsConstructor;
 import mc.sbm.operaconductor.GenericEvent;
 import mc.sbm.operaconductor.domain.ReservationDto;
-import mc.sbm.operaconductor.domain.event.NewReservationEvent;
+import mc.sbm.operaconductor.domain.event.ReservationName;
 import mc.sbm.operaconductor.repository.event.NewReservationEventRepository;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
@@ -28,7 +28,7 @@ public class ReservationNewReservationMapper extends ReservationBaseMapper {
     @Override
     @Transactional
     public void sink(ReservationDto dto) {
-        NewReservationEvent entity = NewReservationEvent.builder()
+        ReservationName entity = ReservationName.builder()
             .primaryKey(dto.getPrimaryKey())
             .hotelId(dto.getHotelId())
             .moduleName("Reservation")

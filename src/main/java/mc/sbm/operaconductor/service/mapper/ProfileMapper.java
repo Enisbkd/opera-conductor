@@ -1,114 +1,114 @@
-package mc.sbm.operaconductor.service.mapper;
-
-import java.time.LocalDateTime;
-import java.util.Map;
-import java.util.stream.Collectors;
-import lombok.RequiredArgsConstructor;
-import mc.sbm.operaconductor.GenericEvent;
-import mc.sbm.operaconductor.domain.ProfileDto;
-import mc.sbm.operaconductor.domain.event.NewProfileEvent;
-import mc.sbm.operaconductor.repository.event.NewProfileEventRepository;
-import org.springframework.stereotype.Component;
-import org.springframework.transaction.annotation.Transactional;
-
-@Component
-@RequiredArgsConstructor
-public class ProfileMapper implements SinkMapper<ProfileDto> {
-
-    private final NewProfileEventRepository repository;
-
-    @Override
-    public String eventKey() {
-        return "PROFILE_NEW_PROFILE";
-    }
-
-    @Override
-    public ProfileDto map(GenericEvent event) {
-        return fromEvent(event);
-    }
-
-    @Override
-    public Class<ProfileDto> targetClass() {
-        return ProfileDto.class;
-    }
-
-    @Override
-    @Transactional
-    public void sink(ProfileDto dto) {
-        NewProfileEvent entity = NewProfileEvent.builder()
-            .primaryKey(dto.getPrimaryKey())
-            .hotelId(dto.getHotelId())
-            .moduleName("Profile")
-            .eventName("NEW PROFILE")
-            .eventTimestamp(dto.getTimestamp())
-            .nameId(dto.getNameId())
-            .nameType(dto.getNameType())
-            .name(dto.getName())
-            .first(dto.getFirst())
-            .middle(dto.getMiddle())
-            .title(dto.getTitle())
-            .nationality(dto.getNationality())
-            .gender(dto.getGender())
-            .birthDate(dto.getBirthDate())
-            .birthCountry(dto.getBirthCountry())
-            .blMsg(dto.getBlMsg())
-            .cashBlInd(dto.getCashBlInd())
-            .emailYn(dto.getEmailYn())
-            .active(dto.getActive())
-            .inactiveDate(dto.getInactiveDate())
-            .language(dto.getLanguage())
-            .mailYn(dto.getMailYn())
-            .vipStatus(dto.getVipStatus())
-            .profession(dto.getProfession())
-            .insertDate(dto.getInsertDate())
-            .membershipInactiveDate(dto.getMembershipInactiveDate())
-            .membershipCardNo(dto.getMembershipCardNo())
-            .membershipType(dto.getMembershipType())
-            .membershipNameOnCard(dto.getMembershipNameOnCard())
-            .processedAt(LocalDateTime.now())
-            .build();
-        repository.save(entity);
-    }
-
-    static ProfileDto fromEvent(GenericEvent event) {
-        Map<String, String> d = event
-            .getDetail()
-            .stream()
-            .collect(
-                Collectors.toMap(
-                    GenericEvent.EventDetail::getElementName,
-                    detail -> detail.getNewValue() != null ? detail.getNewValue() : "",
-                    (a, b) -> a
-                )
-            );
-        return ProfileDto.builder()
-            .timestamp(event.getTimestamp())
-            .primaryKey(event.getPrimaryKey())
-            .hotelId(event.getHotelId())
-            .nameId(d.get("NAME ID"))
-            .nameType(d.get("NAME TYPE"))
-            .name(d.get("NAME"))
-            .first(d.get("FIRST"))
-            .middle(d.get("MIDDLE"))
-            .title(d.get("TITLE"))
-            .nationality(d.get("NATIONALITY"))
-            .gender(d.get("GENDER"))
-            .birthDate(d.get("BIRTH DATE"))
-            .birthCountry(d.get("BIRTH COUNTRY"))
-            .blMsg(d.get("BL MSG"))
-            .cashBlInd(d.get("CASH BL IND"))
-            .emailYn(d.get("EMAIL YN"))
-            .active(d.get("ACTIVE"))
-            .inactiveDate(d.get("INACTIVE DATE"))
-            .language(d.get("LANGUAGE"))
-            .mailYn(d.get("MAIL YN"))
-            .vipStatus(d.get("VIP STATUS"))
-            .profession(d.get("PROFESSION"))
-            .insertDate(d.get("INSERT DATE"))
-            .membershipInactiveDate(d.get("MEMBERSHIP INACTIVE DATE"))
-            .membershipCardNo(d.get("MEMBERSHIP NUMBER"))
-            .membershipType(d.get("MEMBERSHIP TYPE"))
-            .membershipNameOnCard(d.get("MEMBERSHIP NAME ON CARD"))
-            .build();
-    }
-}
+//package mc.sbm.operaconductor.service.mapper;
+//
+//import java.time.LocalDateTime;
+//import java.util.Map;
+//import java.util.stream.Collectors;
+//import lombok.RequiredArgsConstructor;
+//import mc.sbm.operaconductor.GenericEvent;
+//import mc.sbm.operaconductor.domain.ProfileDto;
+//import mc.sbm.operaconductor.domain.event.NewProfileEvent;
+//import mc.sbm.operaconductor.repository.event.NewProfileEventRepository;
+//import org.springframework.stereotype.Component;
+//import org.springframework.transaction.annotation.Transactional;
+//
+//@Component
+//@RequiredArgsConstructor
+//public class ProfileMapper implements SinkMapper<ProfileDto> {
+//
+//    private final NewProfileEventRepository repository;
+//
+//    @Override
+//    public String eventKey() {
+//        return "PROFILE_NEW_PROFILE";
+//    }
+//
+//    @Override
+//    public ProfileDto map(GenericEvent event) {
+//        return fromEvent(event);
+//    }
+//
+//    @Override
+//    public Class<ProfileDto> targetClass() {
+//        return ProfileDto.class;
+//    }
+//
+//    @Override
+//    @Transactional
+//    public void sink(ProfileDto dto) {
+//        NewProfileEvent entity = NewProfileEvent.builder()
+//            .primaryKey(dto.getPrimaryKey())
+//            .hotelId(dto.getHotelId())
+//            .moduleName("Profile")
+//            .eventName("NEW PROFILE")
+//            .eventTimestamp(dto.getTimestamp())
+//            .nameId(dto.getNameId())
+//            .nameType(dto.getNameType())
+//            .name(dto.getName())
+//            .first(dto.getFirst())
+//            .middle(dto.getMiddle())
+//            .title(dto.getTitle())
+//            .nationality(dto.getNationality())
+//            .gender(dto.getGender())
+//            .birthDate(dto.getBirthDate())
+//            .birthCountry(dto.getBirthCountry())
+//            .blMsg(dto.getBlMsg())
+//            .cashBlInd(dto.getCashBlInd())
+//            .emailYn(dto.getEmailYn())
+//            .active(dto.getActive())
+//            .inactiveDate(dto.getInactiveDate())
+//            .language(dto.getLanguage())
+//            .mailYn(dto.getMailYn())
+//            .vipStatus(dto.getVipStatus())
+//            .profession(dto.getProfession())
+//            .insertDate(dto.getInsertDate())
+//            .membershipInactiveDate(dto.getMembershipInactiveDate())
+//            .membershipCardNo(dto.getMembershipCardNo())
+//            .membershipType(dto.getMembershipType())
+//            .membershipNameOnCard(dto.getMembershipNameOnCard())
+//            .processedAt(LocalDateTime.now())
+//            .build();
+//        repository.save(entity);
+//    }
+//
+//    static ProfileDto fromEvent(GenericEvent event) {
+//        Map<String, String> d = event
+//            .getDetail()
+//            .stream()
+//            .collect(
+//                Collectors.toMap(
+//                    GenericEvent.EventDetail::getElementName,
+//                    detail -> detail.getNewValue() != null ? detail.getNewValue() : "",
+//                    (a, b) -> a
+//                )
+//            );
+//        return ProfileDto.builder()
+//            .timestamp(event.getTimestamp())
+//            .primaryKey(event.getPrimaryKey())
+//            .hotelId("HPDEV")
+//            .nameId(d.get("NAME ID"))
+//            .nameType(d.get("NAME TYPE"))
+//            .name(d.get("NAME"))
+//            .first(d.get("FIRST"))
+//            .middle(d.get("MIDDLE"))
+//            .title(d.get("TITLE"))
+//            .nationality(d.get("NATIONALITY"))
+//            .gender(d.get("GENDER"))
+//            .birthDate(d.get("BIRTH DATE"))
+//            .birthCountry(d.get("BIRTH COUNTRY"))
+//            .blMsg(d.get("BL MSG"))
+//            .cashBlInd(d.get("CASH BL IND"))
+//            .emailYn(d.get("EMAIL YN"))
+//            .active(d.get("ACTIVE"))
+//            .inactiveDate(d.get("INACTIVE DATE"))
+//            .language(d.get("LANGUAGE"))
+//            .mailYn(d.get("MAIL YN"))
+//            .vipStatus(d.get("VIP STATUS"))
+//            .profession(d.get("PROFESSION"))
+//            .insertDate(d.get("INSERT DATE"))
+//            .membershipInactiveDate(d.get("MEMBERSHIP INACTIVE DATE"))
+//            .membershipCardNo(d.get("MEMBERSHIP NUMBER"))
+//            .membershipType(d.get("MEMBERSHIP TYPE"))
+//            .membershipNameOnCard(d.get("MEMBERSHIP NAME ON CARD"))
+//            .build();
+//    }
+//}

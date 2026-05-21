@@ -45,4 +45,6 @@ public class ReservationDto {
     private String origin;
     private String actionDate;
     private String room;
+
+    private String membershipId;
 }

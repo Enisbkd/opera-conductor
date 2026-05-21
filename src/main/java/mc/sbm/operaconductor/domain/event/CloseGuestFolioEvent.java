@@ -5,7 +5,7 @@ import lombok.*;
 import lombok.experimental.SuperBuilder;
 
 @Entity
-@Table(name = "close_guest_folio_events")
+@Table(name = "oc_close_guest_folio_events")
 @Data
 @EqualsAndHashCode(callSuper = true)
 @SuperBuilder

@@ -28,7 +28,7 @@ public abstract class ReservationBaseMapper implements SinkMapper<ReservationDto
             .primaryKey(event.getPrimaryKey())
             .hotelId(event.getHotelId())
             // RESERVATION_NAME
-            .resvNameId(d.get("RESV NAME ID"))
+            .resvNameId(event.getPrimaryKey())
             .resort(d.get("RESORT"))
             .beginDate(d.get("BEGIN DATE"))
             .endDate(d.get("END DATE"))
@@ -55,6 +55,7 @@ public abstract class ReservationBaseMapper implements SinkMapper<ReservationDto
             .origin(d.get("ORIGIN"))
             .actionDate(d.get("ACTION DATE"))
             .room(d.get("ROOM"))
+            .membershipId(d.get("MEMBERSHIP NUMBER"))
             .build();
     }
 }

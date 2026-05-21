@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+  <!-- ================================================================
+       Sequences for all event tables (Oracle requires explicit sequences)
+       ================================================================ -->
+
+  <changeSet id="20260519000000" author="opera-conductor" dbms="oracle">
+    <createSequence sequenceName="oc_reservation_name_seq"     startValue="1" incrementBy="50"/>
+    <createSequence sequenceName="oc_update_reservation_events_seq"  startValue="1" incrementBy="50"/>
+    <createSequence sequenceName="oc_delete_reservation_events_seq"  startValue="1" incrementBy="50"/>
+    <createSequence sequenceName="oc_cashiering_posting_events_seq"  startValue="1" incrementBy="50"/>
+    <createSequence sequenceName="oc_new_profile_events_seq"         startValue="1" incrementBy="50"/>
+    <createSequence sequenceName="oc_update_profile_events_seq"      startValue="1" incrementBy="50"/>
+    <createSequence sequenceName="oc_delete_profile_events_seq"      startValue="1" incrementBy="50"/>
+    <createSequence sequenceName="oc_merge_profile_events_seq"       startValue="1" incrementBy="50"/>
+    <createSequence sequenceName="oc_close_guest_folio_events_seq"   startValue="1" incrementBy="50"/>
+  </changeSet>
+
+  <!-- ================================================================
+       new_reservation_events
+       ================================================================ -->
+
+  <changeSet id="20260519005001" author="opera-conductor">
+    <createTable tableName="oc_reservation_name">
+      <column name="primary_key_val" type="varchar(100)"><constraints nullable="false" primaryKey="true"/></column>
+      <column name="hotel_id" type="varchar(20)"><constraints nullable="false"/></column>
+      <column name="module_name" type="varchar(100)"><constraints nullable="false"/></column>
+      <column name="event_name" type="varchar(100)"><constraints nullable="false"/></column>
+      <column name="event_timestamp" type="varchar(100)"/>
+      <column name="unique_event_id" type="varchar(100)"/>
+      <column name="processed_at" type="timestamp"/>
+      <!-- RESERVATION_NAME -->
+      <column name="resv_name_id" type="varchar(50)"/>
+      <column name="resort" type="varchar(20)"/>
+      <column name="begin_date" type="varchar(30)"/>
+      <column name="end_date" type="varchar(30)"/>
+      <column name="reservation_status" type="varchar(50)"/>
+      <column name="confirmation_no" type="varchar(50)"/>
+      <column name="name_id" type="varchar(50)"/>
+      <column name="guest_first_name" type="varchar(100)"/>
+      <column name="guest_name" type="varchar(100)"/>
+      <column name="external_reference" type="varchar(100)"/>
+      <column name="party_code" type="varchar(50)"/>
+      <column name="udfc16" type="varchar(200)"/>
+      <column name="udfc22" type="varchar(200)"/>
+      <column name="res_insert_source" type="varchar(100)"/>
+      <column name="insert_date" type="varchar(30)"/>
+      <!-- RESERVATION_DAILY_ELEMENT_NAME -->
+      <column name="adults" type="varchar(5)"/>
+      <column name="children" type="varchar(5)"/>
+      <column name="rate_code" type="varchar(20)"/>
+      <column name="stay_date" type="varchar(30)"/>
+      <column name="apply_seq" type="varchar(20)"/>
+      <column name="travel_agent_id" type="varchar(50)"/>
+      <column name="company_id" type="varchar(50)"/>
+      <!-- RESERVATION_DAILY_ELEMENTS -->
+      <column name="origin" type="varchar(50)"/>
+      <column name="action_date" type="varchar(30)"/>
+      <column name="room" type="varchar(20)"/>
+      <column name="membership_id" type="varchar(20)"/>
+      <column name="tech_created_date" type="timestamptz" remarks="Heure de création sur la BDD">
+        <constraints nullable="true"/>
+      </column>
+      <column name="tech_updated_date" type="timestamptz" remarks="Heure de mise à jour sur la BDD">
+        <constraints nullable="true"/>
+      </column>
+    </createTable>
+  </changeSet>
+
+
+  <!-- ================================================================
+       cashiering_posting_events
+       ================================================================ -->
+
+  <changeSet id="20260519000004" author="opera-conductor">
+    <createTable tableName="oc_cashiering_posting_events">
+      <column name="primary_key_val" type="varchar(100)"><constraints nullable="false" primaryKey="true"/></column>
+      <column name="hotel_id" type="varchar(20)"><constraints nullable="false"/></column>
+      <column name="module_name" type="varchar(100)"><constraints nullable="false"/></column>
+      <column name="event_name" type="varchar(100)"><constraints nullable="false"/></column>
+      <column name="event_timestamp" type="varchar(100)"/>
+      <column name="unique_event_id" type="varchar(100)"/>
+      <column name="processed_at" type="timestamp"/>
+      <column name="business_date" type="varchar(30)"/>
+      <column name="from_resv_id" type="varchar(50)"/>
+      <column name="gross_amount" type="varchar(30)"/>
+      <column name="guest_account_credit" type="varchar(30)"/>
+      <column name="guest_account_debit" type="varchar(30)"/>
+      <column name="market_code" type="varchar(20)"/>
+      <column name="name_id" type="varchar(50)"/>
+      <column name="rate_code" type="varchar(20)"/>
+      <column name="resv_name_id" type="varchar(50)"/>
+      <column name="room" type="varchar(20)"/>
+      <column name="trx_amount" type="varchar(30)"/>
+      <column name="transaction_code" type="varchar(20)"/>
+      <column name="trx_date" type="varchar(30)"/>
+      <column name="folio_type" type="varchar(50)"/>
+      <column name="posting_date" type="varchar(30)"/>
+      <column name="remark" type="varchar(2000)"/>
+    </createTable>
+  </changeSet>
+
+  <!-- ================================================================
+       new_profile_events
+       ================================================================ -->
+
+  <changeSet id="20260519000005" author="opera-conductor">
+    <createTable tableName="oc_new_profile_events">
+      <column name="primary_key_val" type="varchar(100)"><constraints nullable="false" primaryKey="true"/></column>
+      <column name="hotel_id" type="varchar(20)"><constraints nullable="false"/></column>
+      <column name="module_name" type="varchar(100)"><constraints nullable="false"/></column>
+      <column name="event_name" type="varchar(100)"><constraints nullable="false"/></column>
+      <column name="event_timestamp" type="varchar(100)"/>
+      <column name="unique_event_id" type="varchar(100)"/>
+      <column name="processed_at" type="timestamp"/>
+      <!-- NAME table -->
+      <column name="name_id" type="varchar(50)"/>
+      <column name="name_type" type="varchar(20)"/>
+      <column name="name" type="varchar(100)"/>
+      <column name="first" type="varchar(100)"/>
+      <column name="middle" type="varchar(100)"/>
+      <column name="title" type="varchar(20)"/>
+      <column name="nationality" type="varchar(10)"/>
+      <column name="gender" type="varchar(10)"/>
+      <column name="birth_date" type="varchar(30)"/>
+      <column name="birth_country" type="varchar(10)"/>
+      <column name="bl_msg" type="varchar(200)"/>
+      <column name="cash_bl_ind" type="varchar(5)"/>
+      <column name="email_yn" type="varchar(5)"/>
+      <column name="active" type="varchar(5)"/>
+      <column name="inactive_date" type="varchar(30)"/>
+      <column name="language" type="varchar(10)"/>
+      <column name="mail_yn" type="varchar(5)"/>
+      <column name="vip_status" type="varchar(20)"/>
+      <column name="profession" type="varchar(100)"/>
+      <column name="insert_date" type="varchar(30)"/>
+      <!-- MEMBERSHIPS table -->
+      <column name="membership_inactive_date" type="varchar(30)"/>
+      <column name="membership_card_no" type="varchar(50)"/>
+      <column name="membership_type" type="varchar(50)"/>
+      <column name="membership_name_on_card" type="varchar(100)"/>
+      <column name="tech_created_date" type="timestamptz" remarks="Heure de création sur la BDD">
+        <constraints nullable="true"/>
+      </column>
+      <column name="tech_updated_date" type="timestamptz" remarks="Heure de mise à jour sur la BDD">
+        <constraints nullable="true"/>
+      </column>
+    </createTable>
+  </changeSet>
+
+
+
+
+  <!-- ================================================================
+       close_guest_folio_events
+       ================================================================ -->
+
+  <changeSet id="20260519000009" author="opera-conductor">
+    <createTable tableName="oc_close_guest_folio_events">
+      <column name="primary_key_val" type="varchar(100)"><constraints nullable="false" primaryKey="true"/></column>
+      <column name="hotel_id" type="varchar(20)"><constraints nullable="false"/></column>
+      <column name="module_name" type="varchar(100)"><constraints nullable="false"/></column>
+      <column name="event_name" type="varchar(100)"><constraints nullable="false"/></column>
+      <column name="event_timestamp" type="varchar(100)"/>
+      <column name="unique_event_id" type="varchar(100)"/>
+      <column name="processed_at" type="timestamp"/>
+      <column name="resv_name_id" type="varchar(50)"/>
+      <column name="folio_close_date" type="varchar(30)"/>
+      <column name="tech_created_date" type="timestamptz" remarks="Heure de création sur la BDD">
+        <constraints nullable="true"/>
+      </column>
+      <column name="tech_updated_date" type="timestamptz" remarks="Heure de mise à jour sur la BDD">
+        <constraints nullable="true"/>
+      </column>
+    </createTable>
+  </changeSet>
+
+  <!-- ================================================================
+       Sequence for oc_name (Oracle requires explicit sequences)
+       ================================================================ -->
+
+  <changeSet id="20260521000000" author="opera-conductor" dbms="oracle">
+    <createSequence sequenceName="oc_name_seq" startValue="1" incrementBy="50"/>
+  </changeSet>
+
+  <!-- ================================================================
+       oc_name
+       Maps Opera V5 NAME table fields: ACTIVE_YN, SNAME, LAST, FIRST,
+       SFIRST, MIDDLE, TITLE, GENDER, NATIONALITY, BIRTH_DATE,
+       BIRTH_DATE_STR, BIRTH_COUNTRY, LANGUAGE, PROFESSION, BL_MSG,
+       CASH_BL_IND, EMAIL_YN, MAIL_YN, VIP_STATUS, INACTIVE_DATE,
+       NAME_ID, NAME_TYPE, INSERT_DATE
+       ================================================================ -->
+
+  <changeSet id="20260521000001" author="opera-conductor">
+    <createTable tableName="oc_name">
+      <!-- BaseHotelEvent columns -->
+      <column name="primary_key_val" type="varchar(100)">
+        <constraints nullable="false" primaryKey="true"/>
+      </column>
+      <column name="hotel_id" type="varchar(20)">
+        <constraints nullable="false"/>
+      </column>
+      <column name="module_name" type="varchar(100)">
+        <constraints nullable="false"/>
+      </column>
+      <column name="event_name" type="varchar(100)">
+        <constraints nullable="false"/>
+      </column>
+      <column name="event_timestamp" type="varchar(100)"/>
+      <column name="unique_event_id" type="varchar(100)"/>
+      <column name="processed_at" type="timestamp">
+        <constraints nullable="false"/>
+      </column>
+
+      <!-- NAME_ID -->
+      <column name="name_id" type="varchar(50)"/>
+      <!-- NAME_TYPE -->
+      <column name="name_type" type="varchar(20)"/>
+      <!-- SNAME — company name / legal name -->
+      <column name="s_name" type="varchar(100)"/>
+      <!-- LAST — last name (can be empty for companies) -->
+      <column name="last" type="varchar(100)"/>
+      <!-- FIRST -->
+      <column name="first" type="varchar(100)"/>
+      <!-- SFIRST — uppercased version of FIRST -->
+      <column name="s_first" type="varchar(100)"/>
+      <!-- MIDDLE -->
+      <column name="middle" type="varchar(100)"/>
+      <!-- TITLE -->
+      <column name="title" type="varchar(20)"/>
+      <!-- GENDER -->
+      <column name="gender" type="varchar(10)"/>
+      <!-- NATIONALITY -->
+      <column name="nationality" type="varchar(10)"/>
+      <!-- BIRTH_DATE -->
+      <column name="birth_date" type="varchar(30)"/>
+      <!-- BIRTH_DATE_STR — encrypted/masked form -->
+      <column name="birth_date_str" type="varchar(500)"/>
+      <!-- BIRTH_COUNTRY -->
+      <column name="birth_country" type="varchar(10)"/>
+      <!-- LANGUAGE -->
+      <column name="language" type="varchar(10)"/>
+      <!-- PROFESSION -->
+      <column name="profession" type="varchar(100)"/>
+      <!-- ACTIVE_YN -->
+      <column name="active_yn" type="varchar(5)"/>
+      <!-- INACTIVE_DATE -->
+      <column name="inactive_date" type="varchar(30)"/>
+      <!-- BL_MSG -->
+      <column name="bl_msg" type="varchar(200)"/>
+      <!-- CASH_BL_IND -->
+      <column name="cash_bl_ind" type="varchar(5)"/>
+      <!-- EMAIL_YN -->
+      <column name="email_yn" type="varchar(5)"/>
+      <!-- MAIL_YN -->
+      <column name="mail_yn" type="varchar(5)"/>
+      <!-- VIP_STATUS -->
+      <column name="vip_status" type="varchar(20)"/>
+      <!-- INSERT_DATE — event timestamp on first appearance of primaryKey -->
+      <column name="insert_date" type="varchar(30)"/>
+
+      <!-- Audit columns -->
+      <column name="tech_created_date" type="timestamptz" remarks="Heure de création sur la BDD">
+        <constraints nullable="true"/>
+      </column>
+      <column name="tech_updated_date" type="timestamptz" remarks="Heure de mise à jour sur la BDD">
+        <constraints nullable="true"/>
+      </column>
+    </createTable>
+  </changeSet>
+
+</databaseChangeLog>

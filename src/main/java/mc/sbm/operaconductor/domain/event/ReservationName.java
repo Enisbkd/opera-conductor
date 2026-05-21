@@ -1,17 +1,21 @@
 package mc.sbm.operaconductor.domain.event;
 
-import jakarta.persistence.*;
-import lombok.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
 @Entity
-@Table(name = "new_reservation_events")
+@Table(name = "oc_reservation_name")
 @Data
 @EqualsAndHashCode(callSuper = true)
 @SuperBuilder
 @NoArgsConstructor
 @AllArgsConstructor
-public class NewReservationEvent extends BaseHotelEvent {
+public class ReservationName extends BaseHotelEvent {
 
     // RESERVATION_NAME table
     private String resvNameId;
@@ -43,4 +47,6 @@ public class NewReservationEvent extends BaseHotelEvent {
     private String origin;
     private String actionDate;
     private String room;
+
+    private String membershipId;
 }

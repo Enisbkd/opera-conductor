@@ -5,7 +5,7 @@ import lombok.*;
 import lombok.experimental.SuperBuilder;
 
 @Entity
-@Table(name = "cashiering_posting_events")
+@Table(name = "oc_cashiering_posting_events")
 @Data
 @EqualsAndHashCode(callSuper = true)
 @SuperBuilder

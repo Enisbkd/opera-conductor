@@ -4,21 +4,20 @@ import jakarta.persistence.*;
 import java.time.LocalDateTime;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
+import mc.sbm.operaconductor.domain.AbstractAuditingEntitySBM;
 
 @MappedSuperclass
-@SuperBuilder
 @NoArgsConstructor
 @AllArgsConstructor
+@SuperBuilder
 @Data
-public abstract class BaseHotelEvent {
+@EqualsAndHashCode(callSuper = true)
+public abstract class BaseHotelEvent extends AbstractAuditingEntitySBM<Long> {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sequenceGenerator")
-    @SequenceGenerator(name = "sequenceGenerator", sequenceName = "sequence_generator", allocationSize = 50)
-    private Long id;
-
     @Column(name = "primary_key_val", nullable = false, length = 100)
     private String primaryKey;
 
@@ -39,4 +38,9 @@ public abstract class BaseHotelEvent {
 
     @Column(nullable = false)
     private LocalDateTime processedAt;
+
+    @Override
+    public String getId() {
+        return primaryKey;
+    }
 }

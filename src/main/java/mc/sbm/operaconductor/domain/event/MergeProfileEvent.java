@@ -5,7 +5,7 @@ import lombok.*;
 import lombok.experimental.SuperBuilder;
 
 @Entity
-@Table(name = "merge_profile_events")
+@Table(name = "oc_merge_profile_events")
 @Data
 @EqualsAndHashCode(callSuper = true)
 @SuperBuilder

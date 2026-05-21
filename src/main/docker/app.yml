@@ -7,10 +7,10 @@ services:
       - _JAVA_OPTIONS=-Xmx512m -Xms256m
       - SPRING_PROFILES_ACTIVE=prod,api-docs
       - MANAGEMENT_PROMETHEUS_METRICS_EXPORT_ENABLED=true
-      - SPRING_DATASOURCE_URL=jdbc:oracle:thin:@oracle:1521:OperaConductor
+      - SPRING_DATASOURCE_URL=jdbc:oracle:thin:@oracle:1521:XEPDB1
       - SPRING_DATASOURCE_USERNAME=system
       - SPRING_DATASOURCE_PASSWORD=oracle
-      - SPRING_LIQUIBASE_URL=jdbc:oracle:thin:@oracle:1521:OperaConductor
+      - SPRING_LIQUIBASE_URL=jdbc:oracle:thin:@oracle:1521:XEPDB1
     # If you want to expose these ports outside your dev PC,
     # remove the "127.0.0.1:" prefix
     ports:
