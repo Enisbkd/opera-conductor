@@ -13,73 +13,95 @@ import lombok.experimental.SuperBuilder;
 @AllArgsConstructor
 public class Name extends BaseHotelEvent {
 
-    // NAME_ID
+    /** Opera V5: NAME_ID — primary key of the NAME record */
+    @Column(name = "name_id", length = 50)
     private String nameId;
 
-    // NAME_TYPE
+    /** Opera V5: NAME_TYPE — type of profile (e.g. GUEST, COMPANY, TRAVEL AGENT). NOT NULL in V5. */
+    @Column(name = "name_type", length = 20)
     private String nameType;
 
-    // SNAME — company/legal name, or last name
+    /** Opera V5: SNAME VARCHAR2(80) — uppercase value of last or company name. NOT NULL in V5. */
+    @Column(name = "s_name", length = 80)
     private String sName;
 
-    // LAST — last name (can be empty for companies)
+    /** Opera V5: LAST VARCHAR2(40) — last name of the individual, or search name for other types */
+    @Column(name = "last", length = 40)
     private String last;
 
-    // FIRST
+    /** Opera V5: FIRST VARCHAR2(40) — first name of the individual */
+    @Column(name = "first", length = 40)
     private String first;
 
-    // SFIRST — uppercased version of FIRST
+    /** Opera V5: SFIRST VARCHAR2(40) — uppercased version of FIRST */
+    @Column(name = "s_first", length = 40)
     private String sFirst;
 
-    // MIDDLE
+    /** Opera V5: MIDDLE VARCHAR2(40) — middle name of the individual */
+    @Column(name = "middle", length = 40)
     private String middle;
 
-    // TITLE
+    /** Opera V5: TITLE VARCHAR2(40) — title of the individual (e.g. Mr, Mrs) */
+    @Column(name = "title", length = 40)
     private String title;
 
-    // GENDER
+    /** Opera V5: GENDER VARCHAR2(1) — M (Male) or F (Female) */
+    @Column(name = "gender", length = 1)
     private String gender;
 
-    // NATIONALITY
+    /** Opera V5: NATIONALITY VARCHAR2(20) — nationality of the individual */
+    @Column(name = "nationality", length = 20)
     private String nationality;
 
-    // BIRTH_DATE
+    /** Opera V5: BIRTH_DATE — date of birth stored as string from event payload */
+    @Column(name = "birth_date", length = 30)
     private String birthDate;
 
-    // BIRTH_DATE_STR — encrypted form (e.g. ~:377F0FF...)
-    @Column(length = 500)
+    /** Opera V5: BIRTH_DATE_STR VARCHAR2(2000) — encrypted/masked birth date (e.g. ~:377F0FF...) */
+    @Column(name = "birth_date_str", length = 2000)
     private String birthDateStr;
 
-    // BIRTH_COUNTRY
+    /** Opera V5: BIRTH_COUNTRY VARCHAR2(20) — country of birth */
+    @Column(name = "birth_country", length = 20)
     private String birthCountry;
 
-    // LANGUAGE
+    /** Opera V5: LANGUAGE VARCHAR2(20) — primary language of the profile */
+    @Column(name = "language", length = 20)
     private String language;
 
-    // PROFESSION
+    /** Opera V5: PROFESSION VARCHAR2(80) — profession of the individual */
+    @Column(name = "profession", length = 80)
     private String profession;
 
-    // ACTIVE_YN
+    /** Opera V5: ACTIVE_YN VARCHAR2(1) — whether the profile is active (Y/N) */
+    @Column(name = "active_yn", length = 1)
     private String activeYn;
 
-    // INACTIVE_DATE
+    /** Opera V5: INACTIVE_DATE — date the record was marked as inactive */
+    @Column(name = "inactive_date", length = 30)
     private String inactiveDate;
 
-    // BL_MSG
+    /** Opera V5: BL_MSG VARCHAR2(2000) — blacklist message for restricted profiles */
+    @Column(name = "bl_msg", length = 2000)
     private String blMsg;
 
-    // CASH_BL_IND
+    /** Opera V5: CASH_BL_IND VARCHAR2(1) — billing restriction: C (Cash), R (Restricted), N (Normal) */
+    @Column(name = "cash_bl_ind", length = 1)
     private String cashBlInd;
 
-    // EMAIL_YN
+    /** Opera V5: EMAIL_YN VARCHAR2(1) — email consent flag (Y/N) */
+    @Column(name = "email_yn", length = 1)
     private String emailYn;
 
-    // MAIL_YN
+    /** Opera V5: MAIL_YN VARCHAR2(1) — mail consent flag (Y/N) */
+    @Column(name = "mail_yn", length = 1)
     private String mailYn;
 
-    // VIP_STATUS
+    /** Opera V5: VIP_STATUS VARCHAR2(20) — VIP status of the individual */
+    @Column(name = "vip_status", length = 20)
     private String vipStatus;
 
-    // INSERT_DATE — event timestamp on first appearance of primaryKey
+    /** Opera V5: INSERT_DATE — event timestamp on first appearance of this primaryKey */
+    @Column(name = "insert_date", length = 30)
     private String insertDate;
 }

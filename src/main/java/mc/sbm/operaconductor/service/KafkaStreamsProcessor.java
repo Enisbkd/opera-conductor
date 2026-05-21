@@ -64,11 +64,16 @@ public class KafkaStreamsProcessor {
             .map((key, wrapper) -> {
                 GenericEvent event = wrapper.getPayload().getData().getNewEvent();
                 String uniqueEventId = event.getMetadata() != null ? event.getMetadata().getUniqueEventId() : key;
-                log.debug("Mapping event eventKey={}, uniqueEventId={}", eventKey, uniqueEventId);
+                log.debug(
+                    "Mapping event eventKey={}, uniqueEventId={}, mapper={}",
+                    eventKey,
+                    uniqueEventId,
+                    mapper.getClass().getSimpleName()
+                );
                 T mapped = mapper.map(event);
                 mapper.sink(mapped);
                 return KeyValue.pair(uniqueEventId, mapped);
             })
-            .to(eventKey, SerdeUtils.producedWith(mapper.targetClass()));
+            .to(eventKey + "_" + mapper.getClass().getSimpleName(), SerdeUtils.producedWith(mapper.targetClass()));
     }
 }

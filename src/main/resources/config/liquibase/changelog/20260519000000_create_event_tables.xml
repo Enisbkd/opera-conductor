@@ -274,4 +274,46 @@
     </createTable>
   </changeSet>
 
+      <!-- ================================================================
+           oc_name — correct column types and sizes to match Opera V5 NAME DDL
+           Opera V5 source: OPERA.NAME table
+           ================================================================ -->
+
+      <changeSet id="20260521000002" author="opera-conductor">
+        <!-- SNAME VARCHAR2(80) — uppercase value of last or company name -->
+        <modifyDataType tableName="oc_name" columnName="s_name"        newDataType="varchar(80)"/>
+        <!-- LAST VARCHAR2(40) — last name of the individual -->
+        <modifyDataType tableName="oc_name" columnName="last"          newDataType="varchar(40)"/>
+        <!-- FIRST VARCHAR2(40) — first name of the individual -->
+        <modifyDataType tableName="oc_name" columnName="first"         newDataType="varchar(40)"/>
+        <!-- SFIRST VARCHAR2(40) — uppercased version of FIRST -->
+        <modifyDataType tableName="oc_name" columnName="s_first"       newDataType="varchar(40)"/>
+        <!-- MIDDLE VARCHAR2(40) — middle name of the individual -->
+        <modifyDataType tableName="oc_name" columnName="middle"        newDataType="varchar(40)"/>
+        <!-- TITLE VARCHAR2(40) — title of the individual (Mr, Mrs, etc.) -->
+        <modifyDataType tableName="oc_name" columnName="title"         newDataType="varchar(40)"/>
+        <!-- GENDER VARCHAR2(1) — M (Male) or F (Female) -->
+        <modifyDataType tableName="oc_name" columnName="gender"        newDataType="varchar(1)"/>
+        <!-- NATIONALITY VARCHAR2(20) — nationality of the individual -->
+        <modifyDataType tableName="oc_name" columnName="nationality"   newDataType="varchar(20)"/>
+        <!-- BIRTH_COUNTRY VARCHAR2(20) — country of birth -->
+        <modifyDataType tableName="oc_name" columnName="birth_country" newDataType="varchar(20)"/>
+        <!-- BIRTH_DATE_STR VARCHAR2(2000) — encrypted/masked birth date -->
+        <modifyDataType tableName="oc_name" columnName="birth_date_str" newDataType="varchar(2000)"/>
+        <!-- LANGUAGE VARCHAR2(20) — primary language of the profile -->
+        <modifyDataType tableName="oc_name" columnName="language"      newDataType="varchar(20)"/>
+        <!-- PROFESSION VARCHAR2(80) — profession of the individual -->
+        <modifyDataType tableName="oc_name" columnName="profession"    newDataType="varchar(80)"/>
+        <!-- ACTIVE_YN VARCHAR2(1) — profile is active or not -->
+        <modifyDataType tableName="oc_name" columnName="active_yn"     newDataType="varchar(1)"/>
+        <!-- CASH_BL_IND VARCHAR2(1) — C (Cash), R (Restricted), N (Normal) -->
+        <modifyDataType tableName="oc_name" columnName="cash_bl_ind"   newDataType="varchar(1)"/>
+        <!-- BL_MSG VARCHAR2(2000) — blacklist message for restricted profiles -->
+        <modifyDataType tableName="oc_name" columnName="bl_msg"        newDataType="varchar(2000)"/>
+        <!-- EMAIL_YN VARCHAR2(1) — email consent flag -->
+        <modifyDataType tableName="oc_name" columnName="email_yn"      newDataType="varchar(1)"/>
+        <!-- MAIL_YN VARCHAR2(1) — mail consent flag -->
+        <modifyDataType tableName="oc_name" columnName="mail_yn"       newDataType="varchar(1)"/>
+      </changeSet>
+
 </databaseChangeLog>

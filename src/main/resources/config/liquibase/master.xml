@@ -20,4 +20,5 @@
 
   <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
   <include file="config/liquibase/changelog/20260519000000_create_event_tables.xml" relativeToChangelogFile="false"/>
+  <include file="config/liquibase/changelog/20260519000000_create_memberships_table.xml" relativeToChangelogFile="false"/>
 </databaseChangeLog>

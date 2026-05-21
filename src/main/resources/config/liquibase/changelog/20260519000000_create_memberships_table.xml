@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.20.xsd">
+
+  <changeSet id="create-memberships-table" author="enis">
+    <createTable tableName="MEMBERSHIPS" remarks="Transaction table.">
+
+      <column name="MEMBERSHIP_TYPE" type="VARCHAR2(20)" remarks="Type of the Membership.">
+        <constraints nullable="false" unique="true" uniqueConstraintName="MEMBERSHIPS_UK"/>
+      </column>
+
+      <column name="NAME_ID" type="NUMBER" remarks="Reference to the name that owns this record.">
+        <constraints nullable="false" unique="true" uniqueConstraintName="MEMBERSHIPS_UK"/>
+      </column>
+
+      <column name="MEMBERSHIP_CARD_NO" type="VARCHAR2(50)" remarks="Membership Card Number.">
+        <constraints nullable="false" unique="true" uniqueConstraintName="MEMBERSHIPS_UK"/>
+      </column>
+
+      <column name="NAME_ON_CARD" type="VARCHAR2(80)" remarks="Name as appeared on the Membership Card.">
+        <constraints nullable="false"/>
+      </column>
+
+      <column name="INACTIVE_DATE" type="DATE" remarks="The date the record was marked as inactive.">
+        <constraints nullable="true"/>
+      </column>
+
+      <column name="hotel_id" type="varchar(20)">
+        <constraints nullable="false"/>
+      </column>
+      <column name="module_name" type="varchar(100)">
+        <constraints nullable="false"/>
+      </column>
+      <column name="event_name" type="varchar(100)">
+        <constraints nullable="false"/>
+      </column>
+      <column name="event_timestamp" type="varchar(100)"/>
+      <column name="unique_event_id" type="varchar(100)"/>
+      <column name="processed_at" type="timestamp">
+        <constraints nullable="false"/>
+      </column>
+      <!-- Audit columns -->
+      <column name="tech_created_date" type="timestamptz" remarks="Heure de création sur la BDD">
+        <constraints nullable="true"/>
+      </column>
+      <column name="tech_updated_date" type="timestamptz" remarks="Heure de mise à jour sur la BDD">
+        <constraints nullable="true"/>
+      </column>
+
+    </createTable>
+  </changeSet>
+
+</databaseChangeLog>
